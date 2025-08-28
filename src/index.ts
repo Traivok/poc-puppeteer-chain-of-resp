@@ -11,7 +11,7 @@ import {
 } from "./steps";
 
 async function main() {
-    const pipeline = new Pipeline()
+    const result = await new Pipeline()
         .addStep(new OpenBrowserStep())
         .addStep(new OpenPageStep())
         .addStep(new InjectContextStep<WithWorkingPage, { system: string }>({ system: "Quotes" }))
@@ -22,9 +22,9 @@ async function main() {
             // Only proceed if we found more than 5 quotes
             return output.data.length > 5;
         })
-        .addStep(new FinishExecutionStep<Quote[]>());
+        .addStep(new FinishExecutionStep<Quote[]>())
+        .run();
 
-    const result = await pipeline.run();
     console.log("Pipeline result:", result);
 }
 

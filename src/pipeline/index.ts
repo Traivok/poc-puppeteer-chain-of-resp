@@ -14,9 +14,9 @@ interface StepEntry<I, O> {
 export interface PipelineHooks {
   onStart?: (data?: unknown) => void | Promise<void>;
   onFinish?: (data?: unknown) => void | Promise<void>;
-  onBeforeStep?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
-  onAfterStepSuccess?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
-  onFail?: (data: { stepName?: string; data?: unknown; error?: unknown }) => void | Promise<void>;
+  onBeforeStep?: (data: { stepName?: string | undefined; data?: unknown }) => void | Promise<void>;
+  onAfterStepSuccess?: (data: { stepName?: string | undefined; data?: unknown }) => void | Promise<void>;
+  onFail?: (data: { stepName?: string | undefined; data?: unknown; error?: unknown }) => void | Promise<void>;
 }
 
 export interface Logger {
@@ -31,7 +31,7 @@ export class Pipeline<I, O = I> {
   private steps: StepEntry<any, any>[] = [];
   private hooks: PipelineHooks = {};
   private logger: Logger;
-  private initialArgs?: I;
+  private initialArgs?: I | undefined;
 
   constructor(initialArgs?: I, logger: Logger = defaultLogger) {
     this.initialArgs = initialArgs;
@@ -53,7 +53,7 @@ export class Pipeline<I, O = I> {
       throw new Error("No step to attach guard to. Call addStep() before addGuard().");
     }
     const last = this.steps[this.steps.length - 1];
-    last.guard = guard as Guard<any>;
+    last!.guard = guard as Guard<any>;
     return this;
   }
 
@@ -76,14 +76,14 @@ export class Pipeline<I, O = I> {
           this.logger.log("[Pipeline] Before step:", step.name, data);
         }
 
-        // Guard short-circuit
-        if (guard && !(await guard(data))) {
-          this.logger.log("[Pipeline] Guard failed, short-circuiting step:", step.name);
-          return data as O;
-        }
-
         data = await step.run(data);
 
+        // Guard short-circuit (applied after step execution)
+        if (guard && !(await guard(data))) {
+          this.logger.log("[Pipeline] Guard failed, short-circuiting pipeline:", step.name);
+          return data as O;
+        }
+        
         // onAfterStepSuccess (default logs)
         if (this.hooks.onAfterStepSuccess) {
           await this.hooks.onAfterStepSuccess({ stepName: step.name, data });
