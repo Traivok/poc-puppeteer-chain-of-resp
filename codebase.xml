@@ -1,0 +1,3393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+	<file path='.gitignore'>
+		.env
+		node_modules</file>
+	<file path='codebase.stats.md'><![CDATA[
+		# 🧾 Flatten Stats for codebase.xml
+		
+		## 📊 Summary
+		- Total source size: 88.5 KB
+		- Generated XML size: 94.8 KB
+		- Total lines of code: 2,635
+		- Estimated tokens: 24,276
+		- File breakdown: 11 text, 0 binary, 5 errors
+		
+		## 📈 Size Percentiles
+		Avg: 8,240 B, Median: 1,109 B, p90: 3,238 B, p95: 77,987 B, p99: 77,987 B
+		
+		## 🧮 Size Histogram
+		| Bucket | Files | Bytes |
+		| --- | ---: | ---: |
+		| 0–1KB | 5 | 1,738 |
+		| 1–10KB | 5 | 10,920 |
+		| 10–100KB | 1 | 77,987 |
+		| 100KB–1MB | 0 | 0 |
+		| 1–10MB | 0 | 0 |
+		| 10–100MB | 0 | 0 |
+		| >=100MB | 0 | 0 |
+		
+		## 📦 Top Extensions by Bytes (Top 20)
+		| Ext | Files | Bytes | % of total |
+		| --- | ---: | ---: | ---: |
+		| .xml | 1 | 77,987 | 86.04% |
+		| .ts | 6 | 8,436 | 9.31% |
+		| .md | 1 | 2,726 | 3.01% |
+		| .json | 2 | 1,479 | 1.63% |
+		| <none> | 1 | 17 | 0.02% |
+		
+		## 📂 Top Directories by Bytes (Top 20)
+		| Directory | Files | Bytes | % of total |
+		| --- | ---: | ---: | ---: |
+		| . | 5 | 82,209 | 90.69% |
+		| src | 6 | 8,436 | 9.31% |
+		| src/steps | 4 | 4,200 | 4.63% |
+		| src/pipeline | 1 | 3,238 | 3.57% |
+		
+		## 🌳 Depth Distribution
+		| Depth | Count |
+		| ---: | ---: |
+		| 1 | 5 |
+		| 2 | 1 |
+		| 3 | 5 |
+		
+		## 🧵 Longest Paths (Top 25)
+		| Path | Length | Bytes |
+		| --- | ---: | ---: |
+		| src/pipeline/index.ts | 21 | 3,238 |
+		| src/steps/scraping.ts | 21 | 1,535 |
+		| src/steps/browser.ts | 20 | 2,312 |
+		| src/steps/index.ts | 18 | 80 |
+		| src/steps/types.ts | 18 | 273 |
+		| codebase.stats.md | 17 | 2,726 |
+		| tsconfig.json | 13 | 1,109 |
+		| codebase.xml | 12 | 77,987 |
+		| package.json | 12 | 370 |
+		| src/index.ts | 12 | 998 |
+		| .gitignore | 10 | 17 |
+		
+		## ⏱️ Temporal
+		- Oldest: .gitignore (2025-07-18T15:17:58.315Z)
+		- Newest: codebase.xml (2025-08-28T19:17:48.303Z)
+		
+		| Age | Files | Bytes |
+		| --- | ---: | ---: |
+		| > 1 year | 0 | 0 |
+		| 6–12 months | 0 | 0 |
+		| 1–6 months | 1 | 17 |
+		| 7–30 days | 0 | 0 |
+		| 1–7 days | 0 | 0 |
+		| < 1 day | 10 | 90,628 |
+		
+		## ✅ Quality Signals
+		- Zero-byte files: 0
+		- Empty text files: 0
+		- Hidden files: 1
+		- Symlinks: 0
+		- Large files (>= 50 MB): 0
+		- Suspiciously large files (>= 100 MB): 0
+		
+		## 🗜️ Compressibility
+		Sampled compressibility ratio: 19.55%
+		
+		## 🔧 Git
+		- Tracked: 6 files, 83,207 bytes
+		- Untracked: 5 files, 7,438 bytes
+		
+		## 📚 Largest Files (Top 50)
+		| Path | Size | % of total | LOC |
+		| --- | ---: | ---: | ---: |
+		| codebase.xml | 76.2 KB | 86.04% | 2,176 |
+		| src/pipeline/index.ts | 3.2 KB | 3.57% | 113 |
+		| codebase.stats.md | 2.7 KB | 3.01% | 105 |
+		| src/steps/browser.ts | 2.3 KB | 2.55% | 82 |
+		| src/steps/scraping.ts | 1.5 KB | 1.69% | 44 |
+		| tsconfig.json | 1.1 KB | 1.22% | 44 |
+		| src/index.ts | 998 B | 1.10% | 32 |
+		| package.json | 370 B | 0.41% | 17 |
+		| src/steps/types.ts | 273 B | 0.30% | 16 |
+		| src/steps/index.ts | 80 B | 0.09% | 4 |
+		| .gitignore | 17 B | 0.02% | 2 |]]></file>
+	<file path='codebase.xml'><![CDATA[
+		<?xml version="1.0" encoding="UTF-8"?>
+		<files>
+			<file path='.gitignore'>
+				.env
+				node_modules</file>
+			<file path='codebase.stats.md'><![CDATA[
+				# 🧾 Flatten Stats for codebase.xml
+				
+				## 📊 Summary
+				- Total source size: 71.1 KB
+				- Generated XML size: 76.3 KB
+				- Total lines of code: 2,171
+				- Estimated tokens: 19,543
+				- File breakdown: 11 text, 0 binary, 5 errors
+				
+				## 📈 Size Percentiles
+				Avg: 6,616 B, Median: 1,109 B, p90: 3,238 B, p95: 59,949 B, p99: 59,949 B
+				
+				## 🧮 Size Histogram
+				| Bucket | Files | Bytes |
+				| --- | ---: | ---: |
+				| 0–1KB | 5 | 1,738 |
+				| 1–10KB | 5 | 11,086 |
+				| 10–100KB | 1 | 59,949 |
+				| 100KB–1MB | 0 | 0 |
+				| 1–10MB | 0 | 0 |
+				| 10–100MB | 0 | 0 |
+				| >=100MB | 0 | 0 |
+				
+				## 📦 Top Extensions by Bytes (Top 20)
+				| Ext | Files | Bytes | % of total |
+				| --- | ---: | ---: | ---: |
+				| .xml | 1 | 59,949 | 82.38% |
+				| .ts | 6 | 8,436 | 11.59% |
+				| .md | 1 | 2,892 | 3.97% |
+				| .json | 2 | 1,479 | 2.03% |
+				| <none> | 1 | 17 | 0.02% |
+				
+				## 📂 Top Directories by Bytes (Top 20)
+				| Directory | Files | Bytes | % of total |
+				| --- | ---: | ---: | ---: |
+				| . | 5 | 64,337 | 88.41% |
+				| src | 6 | 8,436 | 11.59% |
+				| src/steps | 4 | 4,200 | 5.77% |
+				| src/pipeline | 1 | 3,238 | 4.45% |
+				
+				## 🌳 Depth Distribution
+				| Depth | Count |
+				| ---: | ---: |
+				| 1 | 5 |
+				| 2 | 1 |
+				| 3 | 5 |
+				
+				## 🧵 Longest Paths (Top 25)
+				| Path | Length | Bytes |
+				| --- | ---: | ---: |
+				| src/pipeline/index.ts | 21 | 3,238 |
+				| src/steps/scraping.ts | 21 | 1,535 |
+				| src/steps/browser.ts | 20 | 2,312 |
+				| src/steps/index.ts | 18 | 80 |
+				| src/steps/types.ts | 18 | 273 |
+				| codebase.stats.md | 17 | 2,892 |
+				| tsconfig.json | 13 | 1,109 |
+				| codebase.xml | 12 | 59,949 |
+				| src/index.ts | 12 | 998 |
+				| package.json | 12 | 370 |
+				| .gitignore | 10 | 17 |
+				
+				## ⏱️ Temporal
+				- Oldest: .gitignore (2025-07-18T15:17:58.315Z)
+				- Newest: codebase.xml (2025-08-28T19:17:42.972Z)
+				
+				| Age | Files | Bytes |
+				| --- | ---: | ---: |
+				| > 1 year | 0 | 0 |
+				| 6–12 months | 0 | 0 |
+				| 1–6 months | 1 | 17 |
+				| 7–30 days | 0 | 0 |
+				| 1–7 days | 0 | 0 |
+				| < 1 day | 10 | 72,756 |
+				
+				## ✅ Quality Signals
+				- Zero-byte files: 0
+				- Empty text files: 0
+				- Hidden files: 1
+				- Symlinks: 0
+				- Large files (>= 50 MB): 0
+				- Suspiciously large files (>= 100 MB): 0
+				
+				## 🗜️ Compressibility
+				Sampled compressibility ratio: 21.25%
+				
+				## 🔧 Git
+				- Tracked: 6 files, 65,335 bytes
+				- Untracked: 5 files, 7,438 bytes
+				
+				## 📚 Largest Files (Top 50)
+				| Path | Size | % of total | LOC |
+				| --- | ---: | ---: | ---: |
+				| codebase.xml | 58.5 KB | 82.38% | 1,708 |
+				| src/pipeline/index.ts | 3.2 KB | 4.45% | 113 |
+				| codebase.stats.md | 2.8 KB | 3.97% | 109 |
+				| src/steps/browser.ts | 2.3 KB | 3.18% | 82 |
+				| src/steps/scraping.ts | 1.5 KB | 2.11% | 44 |
+				| tsconfig.json | 1.1 KB | 1.52% | 44 |
+				| src/index.ts | 998 B | 1.37% | 32 |
+				| package.json | 370 B | 0.51% | 17 |
+				| src/steps/types.ts | 273 B | 0.38% | 16 |
+				| src/steps/index.ts | 80 B | 0.11% | 4 |
+				| .gitignore | 17 B | 0.02% | 2 |]]]]><![CDATA[></file>
+			<file path='codebase.xml'><![CDATA[
+				<?xml version="1.0" encoding="UTF-8"?>
+				<files>
+					<file path='.gitignore'>
+						.env
+						node_modules</file>
+					<file path='codebase.stats.md'><![CDATA[
+						# 🧾 Flatten Stats for codebase.xml
+						
+						## 📊 Summary
+						- Total source size: 54.4 KB
+						- Generated XML size: 58.7 KB
+						- Total lines of code: 1,703
+						- Estimated tokens: 15,021
+						- File breakdown: 12 text, 0 binary, 0 errors
+						
+						## 📈 Size Percentiles
+						Avg: 4,642 B, Median: 1,131 B, p90: 2,829 B, p95: 40,653 B, p99: 40,653 B
+						
+						## 🧮 Size Histogram
+						| Bucket | Files | Bytes |
+						| --- | ---: | ---: |
+						| 0–1KB | 4 | 660 |
+						| 1–10KB | 7 | 14,395 |
+						| 10–100KB | 1 | 40,653 |
+						| 100KB–1MB | 0 | 0 |
+						| 1–10MB | 0 | 0 |
+						| 10–100MB | 0 | 0 |
+						| >=100MB | 0 | 0 |
+						
+						## 📦 Top Extensions by Bytes (Top 20)
+						| Ext | Files | Bytes | % of total |
+						| --- | ---: | ---: | ---: |
+						| .xml | 1 | 40,653 | 72.98% |
+						| .ts | 7 | 10,730 | 19.26% |
+						| .md | 1 | 2,829 | 5.08% |
+						| .json | 2 | 1,479 | 2.65% |
+						| <none> | 1 | 17 | 0.03% |
+						
+						## 📂 Top Directories by Bytes (Top 20)
+						| Directory | Files | Bytes | % of total |
+						| --- | ---: | ---: | ---: |
+						| . | 5 | 44,978 | 80.74% |
+						| src | 7 | 10,730 | 19.26% |
+						| src/robots | 5 | 9,599 | 17.23% |
+						| src/robots/commons | 2 | 2,764 | 4.96% |
+						| src/robots/scrape | 1 | 1,625 | 2.92% |
+						
+						## 🌳 Depth Distribution
+						| Depth | Count |
+						| ---: | ---: |
+						| 1 | 5 |
+						| 2 | 2 |
+						| 3 | 2 |
+						| 4 | 3 |
+						
+						## 🧵 Longest Paths (Top 25)
+						| Path | Length | Bytes |
+						| --- | ---: | ---: |
+						| src/robots/commons/index.ts | 27 | 2,491 |
+						| src/robots/commons/types.ts | 27 | 273 |
+						| src/robots/scrape/steps.ts | 26 | 1,625 |
+						| src/robots/builder.ts | 21 | 2,806 |
+						| src/robots/step.ts | 18 | 2,404 |
+						| codebase.stats.md | 17 | 2,829 |
+						| tsconfig.json | 13 | 1,109 |
+						| codebase.xml | 12 | 40,653 |
+						| package.json | 12 | 370 |
+						| src/index.ts | 12 | 1,131 |
+						| src/help.ts | 11 | 0 |
+						| .gitignore | 10 | 17 |
+						
+						## ⏱️ Temporal
+						- Oldest: .gitignore (2025-07-18T15:17:58.315Z)
+						- Newest: codebase.xml (2025-08-28T18:19:15.421Z)
+						
+						| Age | Files | Bytes |
+						| --- | ---: | ---: |
+						| > 1 year | 0 | 0 |
+						| 6–12 months | 0 | 0 |
+						| 1–6 months | 1 | 17 |
+						| 7–30 days | 0 | 0 |
+						| 1–7 days | 0 | 0 |
+						| < 1 day | 11 | 55,691 |
+						
+						## ✅ Quality Signals
+						- Zero-byte files: 1
+						- Empty text files: 1
+						- Hidden files: 1
+						- Symlinks: 0
+						- Large files (>= 50 MB): 0
+						- Suspiciously large files (>= 100 MB): 0
+						
+						## 🗜️ Compressibility
+						Sampled compressibility ratio: 25.03%
+						
+						## 🔧 Git
+						- Tracked: 11 files, 55,708 bytes
+						- Untracked: 1 files, 0 bytes
+						
+						## 📚 Largest Files (Top 50)
+						| Path | Size | % of total | LOC |
+						| --- | ---: | ---: | ---: |
+						| codebase.xml | 39.7 KB | 72.98% | 1,201 |
+						| codebase.stats.md | 2.8 KB | 5.08% | 107 |
+						| src/robots/builder.ts | 2.7 KB | 5.04% | 82 |
+						| src/robots/commons/index.ts | 2.4 KB | 4.47% | 81 |
+						| src/robots/step.ts | 2.3 KB | 4.32% | 77 |
+						| src/robots/scrape/steps.ts | 1.6 KB | 2.92% | 48 |
+						| src/index.ts | 1.1 KB | 2.03% | 27 |
+						| tsconfig.json | 1.1 KB | 1.99% | 44 |
+						| package.json | 370 B | 0.66% | 17 |
+						| src/robots/commons/types.ts | 273 B | 0.49% | 16 |
+						| .gitignore | 17 B | 0.03% | 2 |
+						| src/help.ts | 0 B | 0.00% | 1 |]]]]]]><![CDATA[><![CDATA[></file>
+					<file path='codebase.xml'><![CDATA[
+						<?xml version="1.0" encoding="UTF-8"?>
+						<files>
+							<file path='.gitignore'>
+								.env
+								node_modules</file>
+							<file path='codebase.stats.md'><![CDATA[
+								# 🧾 Flatten Stats for codebase.xml
+								
+								## 📊 Summary
+								- Total source size: 36.7 KB
+								- Generated XML size: 39.8 KB
+								- Total lines of code: 1,194
+								- Estimated tokens: 10,183
+								- File breakdown: 11 text, 0 binary, 0 errors
+								
+								## 📈 Size Percentiles
+								Avg: 3,413 B, Median: 1,625 B, p90: 2,812 B, p95: 23,368 B, p99: 23,368 B
+								
+								## 🧮 Size Histogram
+								| Bucket | Files | Bytes |
+								| --- | ---: | ---: |
+								| 0–1KB | 4 | 1,463 |
+								| 1–10KB | 6 | 12,715 |
+								| 10–100KB | 1 | 23,368 |
+								| 100KB–1MB | 0 | 0 |
+								| 1–10MB | 0 | 0 |
+								| 10–100MB | 0 | 0 |
+								| >=100MB | 0 | 0 |
+								
+								## 📦 Top Extensions by Bytes (Top 20)
+								| Ext | Files | Bytes | % of total |
+								| --- | ---: | ---: | ---: |
+								| .xml | 1 | 23,368 | 62.24% |
+								| .ts | 6 | 9,910 | 26.39% |
+								| .md | 1 | 2,812 | 7.49% |
+								| .json | 2 | 1,439 | 3.83% |
+								| <none> | 1 | 17 | 0.05% |
+								
+								## 📂 Top Directories by Bytes (Top 20)
+								| Directory | Files | Bytes | % of total |
+								| --- | ---: | ---: | ---: |
+								| . | 5 | 27,636 | 73.61% |
+								| src | 6 | 9,910 | 26.39% |
+								| src/robots | 5 | 9,067 | 24.15% |
+								| src/robots/commons | 2 | 2,764 | 7.36% |
+								| src/robots/scrape | 1 | 1,625 | 4.33% |
+								
+								## 🌳 Depth Distribution
+								| Depth | Count |
+								| ---: | ---: |
+								| 1 | 5 |
+								| 2 | 1 |
+								| 3 | 2 |
+								| 4 | 3 |
+								
+								## 🧵 Longest Paths (Top 25)
+								| Path | Length | Bytes |
+								| --- | ---: | ---: |
+								| src/robots/commons/types.ts | 27 | 273 |
+								| src/robots/commons/index.ts | 27 | 2,491 |
+								| src/robots/scrape/steps.ts | 26 | 1,625 |
+								| src/robots/builder.ts | 21 | 2,274 |
+								| src/robots/step.ts | 18 | 2,404 |
+								| codebase.stats.md | 17 | 2,812 |
+								| tsconfig.json | 13 | 1,109 |
+								| package.json | 12 | 330 |
+								| src/index.ts | 12 | 843 |
+								| codebase.xml | 12 | 23,368 |
+								| .gitignore | 10 | 17 |
+								
+								## ⏱️ Temporal
+								- Oldest: .gitignore (2025-07-18T15:17:58.315Z)
+								- Newest: codebase.xml (2025-08-28T16:40:49.232Z)
+								
+								| Age | Files | Bytes |
+								| --- | ---: | ---: |
+								| > 1 year | 0 | 0 |
+								| 6–12 months | 0 | 0 |
+								| 1–6 months | 1 | 17 |
+								| 7–30 days | 0 | 0 |
+								| 1–7 days | 1 | 330 |
+								| < 1 day | 9 | 37,199 |
+								
+								## ✅ Quality Signals
+								- Zero-byte files: 0
+								- Empty text files: 0
+								- Hidden files: 1
+								- Symlinks: 0
+								- Large files (>= 50 MB): 0
+								- Suspiciously large files (>= 100 MB): 0
+								
+								## 🗜️ Compressibility
+								Sampled compressibility ratio: 27.98%
+								
+								## 🔧 Git
+								- Tracked: 0 files, 0 bytes
+								- Untracked: 11 files, 37,546 bytes
+								
+								## 📚 Largest Files (Top 50)
+								| Path | Size | % of total | LOC |
+								| --- | ---: | ---: | ---: |
+								| codebase.xml | 22.8 KB | 62.24% | 720 |
+								| codebase.stats.md | 2.7 KB | 7.49% | 106 |
+								| src/robots/commons/index.ts | 2.4 KB | 6.63% | 81 |
+								| src/robots/step.ts | 2.3 KB | 6.40% | 77 |
+								| src/robots/builder.ts | 2.2 KB | 6.06% | 66 |
+								| src/robots/scrape/steps.ts | 1.6 KB | 4.33% | 48 |
+								| tsconfig.json | 1.1 KB | 2.95% | 44 |
+								| src/index.ts | 843 B | 2.25% | 18 |
+								| package.json | 330 B | 0.88% | 16 |
+								| src/robots/commons/types.ts | 273 B | 0.73% | 16 |
+								| .gitignore | 17 B | 0.05% | 2 |]]]]]]]]><![CDATA[><![CDATA[><![CDATA[></file>
+							<file path='codebase.xml'><![CDATA[
+								<?xml version="1.0" encoding="UTF-8"?>
+								<files>
+									<file path='.gitignore'>
+										.env
+										node_modules</file>
+									<file path='codebase.stats.md'><![CDATA[
+										# 🧾 Flatten Stats for codebase.xml
+										
+										## 📊 Summary
+										- Total source size: 20.8 KB
+										- Generated XML size: 22.8 KB
+										- Total lines of code: 712
+										- Estimated tokens: 5,848
+										- File breakdown: 11 text, 0 binary, 6 errors
+										
+										## 📈 Size Percentiles
+										Avg: 1,937 B, Median: 1,327 B, p90: 2,095 B, p95: 10,166 B, p99: 10,166 B
+										
+										## 🧮 Size Histogram
+										| Bucket | Files | Bytes |
+										| --- | ---: | ---: |
+										| 0–1KB | 4 | 1,431 |
+										| 1–10KB | 7 | 19,878 |
+										| 10–100KB | 0 | 0 |
+										| 100KB–1MB | 0 | 0 |
+										| 1–10MB | 0 | 0 |
+										| 10–100MB | 0 | 0 |
+										| >=100MB | 0 | 0 |
+										
+										## 📦 Top Extensions by Bytes (Top 20)
+										| Ext | Files | Bytes | % of total |
+										| --- | ---: | ---: | ---: |
+										| .xml | 1 | 10,166 | 47.71% |
+										| .ts | 7 | 9,687 | 45.46% |
+										| .json | 2 | 1,439 | 6.75% |
+										| <none> | 1 | 17 | 0.08% |
+										
+										## 📂 Top Directories by Bytes (Top 20)
+										| Directory | Files | Bytes | % of total |
+										| --- | ---: | ---: | ---: |
+										| . | 4 | 11,622 | 54.54% |
+										| src | 7 | 9,687 | 45.46% |
+										| src/robots | 6 | 8,780 | 41.20% |
+										| src/robots/scrape | 2 | 3,422 | 16.06% |
+										| src/robots/commons | 2 | 2,135 | 10.02% |
+										
+										## 🌳 Depth Distribution
+										| Depth | Count |
+										| ---: | ---: |
+										| 1 | 4 |
+										| 2 | 1 |
+										| 3 | 2 |
+										| 4 | 4 |
+										
+										## 🧵 Longest Paths (Top 25)
+										| Path | Length | Bytes |
+										| --- | ---: | ---: |
+										| src/robots/commons/types.ts | 27 | 177 |
+										| src/robots/commons/index.ts | 27 | 1,958 |
+										| src/robots/scrape/index.ts | 26 | 1,327 |
+										| src/robots/scrape/steps.ts | 26 | 2,095 |
+										| src/robots/builder.ts | 21 | 1,706 |
+										| src/robots/step.ts | 18 | 1,517 |
+										| tsconfig.json | 13 | 1,109 |
+										| package.json | 12 | 330 |
+										| src/index.ts | 12 | 907 |
+										| codebase.xml | 12 | 10,166 |
+										| .gitignore | 10 | 17 |
+										
+										## ⏱️ Temporal
+										- Oldest: .gitignore (2025-07-18T15:17:58.315Z)
+										- Newest: codebase.xml (2025-08-27T17:25:00.627Z)
+										
+										| Age | Files | Bytes |
+										| --- | ---: | ---: |
+										| > 1 year | 0 | 0 |
+										| 6–12 months | 0 | 0 |
+										| 1–6 months | 1 | 17 |
+										| 7–30 days | 0 | 0 |
+										| 1–7 days | 0 | 0 |
+										| < 1 day | 10 | 21,292 |
+										
+										## ✅ Quality Signals
+										- Zero-byte files: 0
+										- Empty text files: 0
+										- Hidden files: 1
+										- Symlinks: 0
+										- Large files (>= 50 MB): 0
+										- Suspiciously large files (>= 100 MB): 0
+										
+										## 🗜️ Compressibility
+										Sampled compressibility ratio: 32.80%
+										
+										## 🔧 Git
+										- Tracked: 3 files, 1,456 bytes
+										- Untracked: 8 files, 19,853 bytes
+										
+										## 📚 Largest Files (Top 50)
+										| Path | Size | % of total | LOC |
+										| --- | ---: | ---: | ---: |
+										| codebase.xml | 9.9 KB | 47.71% | 340 |
+										| src/robots/scrape/steps.ts | 2.0 KB | 9.83% | 60 |
+										| src/robots/commons/index.ts | 1.9 KB | 9.19% | 67 |
+										| src/robots/builder.ts | 1.7 KB | 8.01% | 52 |
+										| src/robots/step.ts | 1.5 KB | 7.12% | 44 |
+										| src/robots/scrape/index.ts | 1.3 KB | 6.23% | 48 |
+										| tsconfig.json | 1.1 KB | 5.20% | 44 |
+										| src/index.ts | 907 B | 4.26% | 30 |
+										| package.json | 330 B | 1.55% | 16 |
+										| src/robots/commons/types.ts | 177 B | 0.83% | 9 |
+										| .gitignore | 17 B | 0.08% | 2 |]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+									<file path='codebase.xml'><![CDATA[
+										<?xml version="1.0" encoding="UTF-8"?>
+										<files>
+											<file path='.gitignore'>
+												.env
+												node_modules</file>
+											<file path='codebase.xml'><![CDATA[
+												<?xml version="1.0" encoding="UTF-8"?>
+												<files>
+													<file path='.gitignore'>
+														.env
+														node_modules</file>
+													<file path='package.json'>
+														{
+														  "type": "module",
+														  "devDependencies": {
+														    "@types/express": "^5.0.3",
+														    "typescript": "^5.9.2"
+														  },
+														  "dependencies": {
+														    "express": "^5.1.0",
+														    "puppeteer": "^24.17.0"
+														  }
+														}</file>
+													<file path='src/index.ts'>
+														import express, { type Request, type Response } from 'express'
+														import { runPuppeteerRobot } from './robots/pptr-receipt/index.js'
+														import { runScrapeRobot } from './robots/scrape/index.js'
+														const app = express()
+														const port = 3000
+														
+														app.get('/', (req: Request, res: Response) => {
+														    res.send('Hello World!')
+														})
+														
+														app.get('/scrape', (req: Request, res: Response) => {
+														    runScrapeRobot();
+														    res.send('Scraping started!');
+														})
+														
+														app.get('/receipt', (req: Request, res: Response) => {
+														    runPuppeteerRobot();
+														    res.send('Puppeteer scraping started!');
+														})
+														
+														app.listen(port, () => {
+														  console.log(`Example app listening on port ${port}`)
+														})</file>
+													<file path='src/robots/commons/index.ts'>
+														export * from "./steps.js";</file>
+													<file path='src/robots/commons/steps.ts'><![CDATA[
+														import { AbstractStep } from "../step.js";
+														import puppeteer from "puppeteer";
+														
+														export interface PuppeteerData {
+														  browser?: puppeteer.Browser;
+														  page?: puppeteer.Page;
+														  url?: string;
+														}
+														
+														// Passos genéricos
+														
+														export class OpenBrowserStep extends AbstractStep<PuppeteerData> {
+														  constructor() {
+														    super("OpenBrowserStep");
+														  }
+														
+														  protected async execute(data: PuppeteerData): Promise<void> {
+														    data.browser = await puppeteer.launch({ headless: false });
+														    console.log("[OpenBrowserStep] Browser launched");
+														  }
+														}
+														
+														export class GoToGoogleStep extends AbstractStep<PuppeteerData> {
+														  constructor() {
+														    super("GoToGoogleStep");
+														  }
+														
+														  protected async execute(data: PuppeteerData): Promise<void> {
+														    if (!data.browser) throw new Error("Browser not initialized");
+														    data.page = await data.browser.newPage();
+														    await data.page.goto("https://www.google.com");
+														    console.log("[GoToGoogleStep] Navigated to Google");
+														  }
+														}
+														
+														export class TakePdfStep extends AbstractStep<PuppeteerData> {
+														  constructor() {
+														    super("TakePdfStep");
+														  }
+														
+														  protected async execute(data: PuppeteerData): Promise<void> {
+														    if (!data.page) throw new Error("Page not initialized");
+														    await data.page.pdf({ path: "page.pdf" });
+														    console.log("[TakePdfStep] PDF saved");
+														    await data.browser?.close();
+														  }
+														}
+														
+														// Outros passos genéricos
+														export class LogStep<T> extends AbstractStep<T> {
+														  constructor(private message: string) {
+														    super("LogStep");
+														  }
+														
+														  protected execute(data: T): void {
+														    console.log(`[LogStep]: ${this.message}`, data);
+														  }
+														}
+														
+														export class DelayStep<T> extends AbstractStep<T> {
+														  constructor(private ms: number) {
+														    super("DelayStep");
+														  }
+														
+														  protected execute(data: T): void {
+														    const start = Date.now();
+														    while (Date.now() - start < this.ms) {}
+														    console.log(`[DelayStep]: waited ${this.ms}ms`);
+														  }
+														}]]]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+													<file path='src/robots/pptr-receipt/index.ts'>
+														import { OpenBrowserStep, GoToGoogleStep, TakePdfStep } from "../commons/steps.js";
+														import type { PuppeteerData } from "../commons/steps.js";
+														import { SearchPuppeteerStep } from "./steps.js";
+														
+														async function runPuppeteerRobot() {
+														  const data: PuppeteerData = {};
+														
+														  const openBrowser = new OpenBrowserStep();
+														  const goToGoogle = new GoToGoogleStep();
+														  const search = new SearchPuppeteerStep();
+														  const takePdf = new TakePdfStep();
+														
+														  openBrowser.setNext(goToGoogle)
+														             .setNext(search)
+														             .setNext(takePdf);
+														
+														  await openBrowser.runStep(data);
+														}
+														
+														export { runPuppeteerRobot };</file>
+													<file path='src/robots/pptr-receipt/steps.ts'><![CDATA[
+														import { AbstractStep } from "../step.js";
+														import type { PuppeteerData } from "../commons/steps.js";
+														
+														export class SearchPuppeteerStep extends AbstractStep<PuppeteerData> {
+														  constructor() {
+														    super("SearchPuppeteerStep");
+														  }
+														
+														  protected async execute(data: PuppeteerData): Promise<void> {
+														    if (!data.page) throw new Error("Page not initialized");
+														    
+														    // Wait for search input and try multiple selectors
+														    const searchSelectors = [
+														      'input[name="q"]',
+														      'textarea[name="q"]', 
+														      'input[title="Search"]',
+														      'textarea[title="Search"]'
+														    ];
+														    
+														    let foundSelector = null;
+														    for (const selector of searchSelectors) {
+														      try {
+														        await data.page.waitForSelector(selector, { timeout: 2000 });
+														        const element = await data.page.$(selector);
+														        if (element) {
+														          foundSelector = selector;
+														          break;
+														        }
+														      } catch (e) {
+														        continue;
+														      }
+														    }
+														    
+														    if (!foundSelector) {
+														      throw new Error("Could not find Google search input");
+														    }
+														    
+														    await data.page.type(foundSelector, "puppeteer");
+														    await data.page.keyboard.press("Enter");
+														    await data.page.waitForNavigation();
+														    console.log("[SearchPuppeteerStep] Searched Puppeteer");
+														  }
+														}]]]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+													<file path='src/robots/scrape/index.ts'><![CDATA[
+														import { OpenBrowserStep, GoToGoogleStep } from "../commons/steps.js";
+														import { ExtractTitlesStep, ExtractLinksStep } from "./steps.js";
+														import type { PuppeteerData } from "../commons/steps.js";
+														
+														async function runScrapeRobot() {
+														  const data: PuppeteerData = {};
+														
+														  // Primeira página
+														  const openBrowser = new OpenBrowserStep();
+														  const goToGoogle = new GoToGoogleStep();
+														  const extractTitles = new ExtractTitlesStep();
+														
+														  // Segunda página
+														  const goToQuotes = new GoToPageStep("https://quotes.toscrape.com/");
+														  const extractLinks = new ExtractLinksStep();
+														
+														  openBrowser
+														    .setNext(goToGoogle)
+														    .setNext(extractTitles)
+														    .setNext(goToQuotes)
+														    .setNext(extractLinks);
+														
+														  await openBrowser.runStep(data);
+														
+														  console.log("Scraping result:", {
+														    titles: (data as any).titles,
+														    links: (data as any).links
+														  });
+														
+														  await data.browser?.close();
+														}
+														
+														// Reutilizamos GoToPageStep genérico do PDF Robot
+														class GoToPageStep extends GoToGoogleStep {
+														  constructor(private url: string) {
+														    super();
+														    this.name = `GoToPageStep(${url})`;
+														  }
+														
+														  protected async execute(data: PuppeteerData): Promise<void> {
+														    if (!data.browser) throw new Error("Browser not initialized");
+														    data.page = await data.browser.newPage();
+														    await data.page.goto(this.url);
+														    console.log(`[GoToPageStep] Navigated to ${this.url}`);
+														  }
+														}
+														
+														export { runScrapeRobot };]]]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+													<file path='src/robots/scrape/steps.ts'><![CDATA[
+														import type { PuppeteerData } from "../commons/steps.js";
+														import { AbstractStep } from "../step.js";
+														
+														// Extrai títulos H1 da página
+														export class ExtractTitlesStep extends AbstractStep<PuppeteerData> {
+														  constructor() {
+														    super("ExtractTitlesStep");
+														  }
+														
+														  protected async execute(data: PuppeteerData): Promise<void> {
+														    if (!data.page) throw new Error("Page not initialized");
+														    const titles = await data.page.$$eval("h1", els => els.map(e => e.textContent || ""));
+														    (data as any).titles = titles; // adiciona ao fluxo
+														    console.log("[ExtractTitlesStep] Titles extracted:", titles);
+														  }
+														}
+														
+														// Extrai links da página
+														export class ExtractLinksStep extends AbstractStep<PuppeteerData> {
+														  constructor() {
+														    super("ExtractLinksStep");
+														  }
+														
+														  protected async execute(data: PuppeteerData): Promise<void> {
+														    if (!data.page) throw new Error("Page not initialized");
+														    const links = await data.page.$$eval("a", els => els.map(e => e.href));
+														    (data as any).links = links;
+														    console.log("[ExtractLinksStep] Links extracted:", links);
+														  }
+														}]]]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+													<file path='src/robots/step.ts'><![CDATA[
+														interface IStep<T> {
+														    name: string;
+														    
+														    setNext<U extends T>(step: IStep<U>): IStep<U>;
+														    runStep(data: T): Promise<void>;    
+														}
+														
+														export abstract class AbstractStep<T> implements IStep<T> {
+														    name: string;
+														    private nextStep?: IStep<any>;
+														  
+														    constructor(name: string) {
+														      this.name = name;
+														    }
+														  
+														    public setNext<U extends T>(step: IStep<U>): IStep<U> {
+														      this.nextStep = step;
+														      return step;
+														    }
+														  
+														    public async runStep(data: T): Promise<void> {
+														      // Executa a lógica da etapa (delegada para subclasses)
+														      await this.execute(data);
+														  
+														      // Encaminha para o próximo passo, se existir
+														      if (this.nextStep) {
+														        await this.nextStep.runStep(data);
+														      }
+														    }
+														  
+														    // Método que cada passo concreto vai precisar implementar
+														    protected abstract execute(data: T): void | Promise<void>;
+														  }]]]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+													<file path='tsconfig.json'>
+														{
+														  // Visit https://aka.ms/tsconfig to read more about this file
+														  "compilerOptions": {
+														    // File Layout
+														    "rootDir": "./src",
+														    "outDir": "./dist",
+														
+														    // Environment Settings
+														    // See also https://aka.ms/tsconfig/module
+														    "module": "nodenext",
+														    "target": "esnext",
+														    "types": [],
+														    // For nodejs:
+														    // "lib": ["esnext"],
+														    // "types": ["node"],
+														    // and npm install -D @types/node
+														
+														    // Other Outputs
+														    "sourceMap": true,
+														    "declaration": true,
+														    "declarationMap": true,
+														
+														    // Stricter Typechecking Options
+														    "noUncheckedIndexedAccess": true,
+														    "exactOptionalPropertyTypes": true,
+														
+														    // Style Options
+														    // "noImplicitReturns": true,
+														    // "noImplicitOverride": true,
+														    // "noUnusedLocals": true,
+														    // "noUnusedParameters": true,
+														    // "noFallthroughCasesInSwitch": true,
+														    // "noPropertyAccessFromIndexSignature": true,
+														
+														    // Recommended Options
+														    "strict": true,
+														    "jsx": "react-jsx",
+														    "verbatimModuleSyntax": true,
+														    "isolatedModules": true,
+														    "noUncheckedSideEffectImports": true,
+														    "moduleDetection": "force",
+														    "skipLibCheck": true,
+														  }
+														}</file>
+												</files>]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+											<file path='package.json'>
+												{
+												    "type": "module",
+												    "strict": true,
+												    "module": "nodenext",
+												    "moduleResolution": "nodenext",
+												    "devDependencies": {
+												        "@types/express": "^5.0.3",
+												        "@types/node": "^24.3.0",
+												        "typescript": "^5.9.2"
+												    },
+												    "dependencies": {
+												        "express": "^5.1.0",
+												        "puppeteer": "^24.17.0"
+												    }
+												}</file>
+											<file path='src/index.ts'>
+												// import express, { type Request, type Response } from 'express'
+												// import { runPuppeteerRobot } from './robots/pptr-receipt/index.js'
+												// import { runScrapeRobot } from './robots/scrape/index.js'
+												// const app = express()
+												// const port = 3000
+												
+												// app.get('/', (req: Request, res: Response) => {
+												//     res.send('Hello World!')
+												// })
+												
+												// app.get('/scrape', (req: Request, res: Response) => {
+												//     runScrapeRobot();
+												//     res.send('Scraping started!');
+												// })
+												
+												// app.get('/receipt', (req: Request, res: Response) => {
+												//     runPuppeteerRobot();
+												//     res.send('Puppeteer scraping started!');
+												// })
+												
+												// app.listen(port, () => {
+												//   console.log(`Example app listening on port ${port}`)
+												// })
+												
+												import { ScrapeQuotes } from './robots/scrape/index.js';
+												
+												const scrapeQuotes = new ScrapeQuotes(10000);
+												const result = await scrapeQuotes.run();
+												console.log('Extracted quotes:', JSON.stringify(result, null, 2));</file>
+											<file path='src/robots/builder.ts'><![CDATA[
+												import { AbstractStep } from "./step";
+												
+												export class StepChain {
+												    private steps: AbstractStep<unknown, unknown>[] = [];
+												
+												    public start<TInput, TOutput>(step: AbstractStep<TInput, TOutput>): StepChain {
+												        this.steps = [step];
+												        return this;
+												    }
+												
+												    public then<TInput, TOutput>(step: AbstractStep<TInput, TOutput>): StepChain {
+												        if (this.steps.length === 0) {
+												            throw new Error("Must call start() before then()");
+												        }
+												        
+												        const previousStep = this.steps[this.steps.length - 1];
+												        if (previousStep) {
+												            previousStep.setNext(step);
+												        }
+												        this.steps.push(step);
+												        return this;
+												    }
+												
+												    public async run<TInput>(initialData?: TInput): Promise<unknown> {
+												        if (this.steps.length === 0) {
+												            throw new Error("No steps defined. Call start() first.");
+												        }
+												        
+												        try {
+												            const firstStep = this.steps[0] as AbstractStep<TInput, unknown>;
+												            const result = await firstStep.runStep(initialData as TInput);
+												            console.log("[StepChain] ✅ All steps completed successfully");
+												            return result;
+												        } catch (error) {
+												            console.error("[StepChain] ❌ Step chain execution failed:");
+												            console.error("Steps in chain:", this.steps.map(step => step.name || 'Unknown'));
+												            
+												            if (error instanceof Error) {
+												                console.error("Error details:", error.message);
+												                console.error("Full stack trace:", error.stack);
+												            }
+												            
+												            throw error;
+												        }
+												    }
+												}
+												
+												// Factory function para criar um builder
+												export function createStepChain(): StepChain {
+												    return new StepChain();
+												}]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+											<file path='src/robots/commons/index.ts'><![CDATA[
+												import puppeteer, { type LaunchOptions } from "puppeteer";
+												import { AbstractStep } from "../step";
+												import type { WithBrowser, WithWorkingPage } from "./types";
+												
+												export class OpenBrowserStep extends AbstractStep<undefined, WithBrowser> {
+												    constructor(private options?: LaunchOptions) {
+												        super("OpenBrowserStep");
+												    }
+												
+												    protected async execute(_ = undefined): Promise<WithBrowser> {
+												        const browser = await puppeteer.launch({
+												            headless: false,
+												            ...this.options,
+												        });
+												        return { browser } as WithBrowser;
+												    }
+												}
+												
+												export class CloseBrowserStep extends AbstractStep<WithBrowser, void> {
+												    constructor() {
+												        super("CloseBrowserStep");
+												    }
+												
+												    protected async execute(data: WithBrowser): Promise<void> {
+												        await data.browser.close();
+												    }
+												}
+												
+												export class CloseBrowserAndReturnStep<T> extends AbstractStep<WithBrowser & { data: T }, T> {
+												    constructor() {
+												        super("CloseBrowserAndReturnStep");
+												    }
+												
+												    protected async execute(input: WithBrowser & { data: T }): Promise<T> {
+												        await input.browser.close();
+												        return input.data;
+												    }
+												}
+												
+												export class OpenPageStep extends AbstractStep<WithBrowser, WithWorkingPage> {
+												    constructor() {
+												        super("OpenPageStep");
+												    }
+												
+												    protected async execute(data: WithBrowser): Promise<WithWorkingPage> {
+												        const page = await data.browser.newPage();
+												        return { browser: data.browser, page };
+												    }
+												}
+												
+												export class NavigateToStep extends AbstractStep<WithWorkingPage, WithWorkingPage> {
+												    constructor(
+												        private url: string,
+												        private waitUntil:
+												            | "load"
+												            | "domcontentloaded"
+												            | "networkidle0"
+												            | "networkidle2" = "networkidle2"
+												    ) {
+												        super("NavigateToStep");
+												    }
+												
+												    protected async execute(data: WithWorkingPage): Promise<WithWorkingPage> {
+												        await data.page.goto(this.url, { waitUntil: this.waitUntil });
+												        return data;
+												    }
+												}]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+											<file path='src/robots/commons/types.ts'>
+												import type { Browser, Page } from "puppeteer";
+												
+												export interface WithBrowser {
+												    browser: Browser;
+												}
+												
+												export interface WithWorkingPage extends WithBrowser {
+												    page: Page;
+												}</file>
+											<file path='src/robots/scrape/index.ts'><![CDATA[
+												import { CloseBrowserAndReturnStep, NavigateToStep, OpenBrowserStep, OpenPageStep } from "../commons";
+												import { ExtractQuotesStep } from "./steps";
+												import { createStepChain } from "../builder";
+												
+												interface Quote {
+												    text: string;
+												    author: string;
+												    tags: string[];
+												}
+												
+												export class ScrapeQuotes {
+												    constructor(private timeout: number) {
+												        
+												    }
+												
+												    public async run(): Promise<Quote[]> {
+												        const result = await createStepChain()
+												            .start(new OpenBrowserStep())
+												            .then(new OpenPageStep())
+												            .then(new NavigateToStep("https://quotes.toscrape.com/"))
+												            .then(new ExtractQuotesStep())
+												            .then(new CloseBrowserAndReturnStep<Quote[]>())
+												            .run();
+												
+												        return result as Quote[];
+												    }
+												}
+												
+												// Keep old class for backward compatibility
+												export class ScrapeGoogle {
+												    constructor(private timeout: number) {
+												        
+												    }
+												
+												    public async run(term: string) {
+												        const result = await createStepChain()
+												            .start(new OpenBrowserStep())
+												            .then(new OpenPageStep())
+												            .then(new NavigateToStep(`https://google.com/search?q=${term}`))
+												            .then(new ExtractQuotesStep()) // Changed to quotes for demo
+												            .then(new CloseBrowserAndReturnStep<Quote[]>())
+												            .run();
+												
+												        return result;
+												    }
+												}]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+											<file path='src/robots/scrape/steps.ts'><![CDATA[
+												import type { WithWorkingPage, WithBrowser } from "../commons/types";
+												import { AbstractStep } from "../step";
+												
+												interface Quote {
+												    text: string;
+												    author: string;
+												    tags: string[];
+												}
+												
+												export class ExtractQuotesStep extends AbstractStep<WithWorkingPage, WithBrowser & { data: Quote[] }> {
+												    constructor() {
+												        super("ExtractQuotesStep");
+												    }
+												
+												    protected async execute(input: WithWorkingPage): Promise<WithBrowser & { data: Quote[] }> {
+												        const quotes = await input.page.evaluate(() => {
+												            const quoteElements = document.querySelectorAll('.quote');
+												            const results: Array<{text: string, author: string, tags: string[]}> = [];
+												            
+												            quoteElements.forEach((quote) => {
+												                const textElement = quote.querySelector('.text');
+												                const authorElement = quote.querySelector('.author');
+												                const tagElements = quote.querySelectorAll('.tag');
+												                
+												                if (textElement && authorElement) {
+												                    results.push({
+												                        text: textElement.textContent?.trim() || '',
+												                        author: authorElement.textContent?.trim() || '',
+												                        tags: Array.from(tagElements).map((tag) => tag.textContent?.trim() || '')
+												                    });
+												                }
+												            });
+												            
+												            return results;
+												        });
+												        
+												        return {
+												            browser: input.browser,
+												            data: quotes
+												        };
+												    }
+												}
+												
+												// Keep the old step for backward compatibility
+												export class ExtractGoogleSearchStep extends AbstractStep<WithWorkingPage, WithBrowser & { data: string[] }> {
+												    constructor() {
+												        super("ExtractGoogleSearchStep");
+												    }
+												
+												    protected async execute(input: WithWorkingPage): Promise<WithBrowser & { data: string[] }> {
+												        const element = await input.page.$("h3");
+												        const text = await element?.evaluate((node) => node.textContent?.trim());
+												        const results = [text || ""];
+												        
+												        return {
+												            browser: input.browser,
+												            data: results
+												        };
+												    }
+												}]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+											<file path='src/robots/step.ts'><![CDATA[
+												
+												export abstract class AbstractStep<TInput, TOutput = TInput> {
+												    name: string;
+												    private nextStep?: AbstractStep<TOutput, unknown>;
+												  
+												    constructor(name: string) {
+												      this.name = name;
+												    }
+												  
+												    public setNext<U extends TOutput>(step: AbstractStep<U, unknown>): AbstractStep<U, unknown> {
+												      this.nextStep = step;
+												      return step;
+												    }
+												  
+												    public async runStep(data: TInput): Promise<unknown> {
+												      console.log(`[${this.name}] Starting execution...`);
+												    
+												      try {
+												        // Executa a lógica da etapa (delegada para subclasses)
+												        const result = await this.execute(data);
+												      
+												        console.log(`[${this.name}] Execution completed successfully.`);
+												
+												        // Encaminha para o próximo passo, se existir
+												        if (this.nextStep) {
+												          return await this.nextStep.runStep(result);
+												        }
+												        
+												        return result;
+												      } catch (error) {
+												        console.error(`[${this.name}] ❌ Execution failed:`, error);
+												        
+												        // Enriquece o erro com informações do step
+												        const stepError = new Error(`Step '${this.name}' failed: ${error instanceof Error ? error.message : String(error)}`);
+												        stepError.cause = error;
+												        stepError.stack = `${stepError.stack}\n--- Caused by step '${this.name}' ---\n${error instanceof Error ? error.stack : 'No stack trace available'}`;
+												        
+												        throw stepError;
+												      }
+												    }
+												  
+												    // Método que cada passo concreto vai precisar implementar
+												    protected abstract execute(data: TInput): Promise<TOutput>;
+												  }]]]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+											<file path='tsconfig.json'>
+												{
+												  // Visit https://aka.ms/tsconfig to read more about this file
+												  "compilerOptions": {
+												    // File Layout
+												    "rootDir": "./src",
+												    "outDir": "./dist",
+												
+												    // Environment Settings
+												    // See also https://aka.ms/tsconfig/module
+												    "module": "esnext",
+												    "target": "es2022",
+												    "moduleResolution": "bundler",
+												    "allowSyntheticDefaultImports": true,
+												    "types": ["node"],
+												    "lib": ["esnext"],
+												
+												    // Other Outputs
+												    "sourceMap": true,
+												    "declaration": true,
+												    "declarationMap": true,
+												
+												    // Stricter Typechecking Options
+												    "noUncheckedIndexedAccess": true,
+												    "exactOptionalPropertyTypes": true,
+												
+												    // Style Options
+												    // "noImplicitReturns": true,
+												    // "noImplicitOverride": true,
+												    // "noUnusedLocals": true,
+												    // "noUnusedParameters": true,
+												    // "noFallthroughCasesInSwitch": true,
+												    // "noPropertyAccessFromIndexSignature": true,
+												
+												    // Recommended Options
+												    "strict": true,
+												    "jsx": "react-jsx",
+												    "verbatimModuleSyntax": true,
+												    "isolatedModules": true,
+												    "noUncheckedSideEffectImports": true,
+												    "moduleDetection": "force",
+												    "skipLibCheck": true,
+												  }
+												}</file>
+										</files>]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+									<file path='package.json'>
+										{
+										    "type": "module",
+										    "strict": true,
+										    "module": "nodenext",
+										    "moduleResolution": "nodenext",
+										    "devDependencies": {
+										        "@types/express": "^5.0.3",
+										        "@types/node": "^24.3.0",
+										        "typescript": "^5.9.2"
+										    },
+										    "dependencies": {
+										        "express": "^5.1.0",
+										        "puppeteer": "^24.17.0"
+										    }
+										}</file>
+									<file path='src/index.ts'><![CDATA[
+										import { Pipeline } from "./robots/builder";
+										import { OpenBrowserStep, OpenPageStep, NavigateToStep, FinishExecutionStep, InjectContextStep } from "./robots/commons";
+										import type { WithWorkingPage } from "./robots/commons/types";
+										import { ExtractQuotesStep, type Quote } from "./robots/scrape/steps";
+										
+										const scrapeQuotes = new Pipeline()
+										            .start(new OpenBrowserStep())
+										            .addStep(new OpenPageStep())
+										            .addStep(new InjectContextStep<WithWorkingPage, { system: string }>({ system: "Quotes" }))
+										            .addStep(new NavigateToStep("https://quotes.toscrape.com/"))
+										            .addStep(new ExtractQuotesStep())
+										            .addStep(new FinishExecutionStep<Quote[]>())
+										            .build()
+										            
+										
+										const result = await scrapeQuotes.run();
+										console.log('Extracted quotes:', JSON.stringify(result, null, 2));]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+									<file path='src/robots/builder.ts'><![CDATA[
+										import { AbstractStep } from "./step";
+										
+										export class GuardStep extends AbstractStep<unknown, unknown> {
+										    constructor(private guardFn: (input: unknown, output: unknown) => boolean) {
+										        super("GuardStep");
+										    }
+										
+										    protected async runStep(data: unknown): Promise<unknown> {
+										        if (!this.guardFn(data, data)) {
+										            throw new Error("Guard condition failed");
+										        }
+										        return data;
+										    }
+										}
+										
+										export class Pipeline<TInput = unknown, TOutput = unknown> {
+										    private steps: AbstractStep<unknown, unknown>[] = [];
+										    private firstStep?: AbstractStep<TInput, unknown>;
+										
+										    constructor() {}
+										
+										    public start<TStartInput, TStartOutput>(step: AbstractStep<TStartInput, TStartOutput>): Pipeline<TStartInput, TStartOutput> {
+										        const pipeline = new Pipeline<TStartInput, TStartOutput>();
+										        pipeline.steps = [step];
+										        pipeline.firstStep = step as AbstractStep<TStartInput, unknown>;
+										        return pipeline;
+										    }
+										
+										    // public addGuard<TInput, TOutput>(guardFn: (input: TInput, output: TOutput) => boolean): Pipeline {
+										    //     if (this.steps.length === 0) {
+										    //         throw new Error("Must call start() before then()");
+										    //     }
+										
+										    //     const previousStep = this.steps[this.steps.length - 1];
+										    //     if (previousStep) {
+										    //         previousStep.setNext(new GuardStep(guardFn));
+										    //     }
+										        
+										    //     return this;
+										    // }
+										
+										    public addStep<TNextOutput>(step: AbstractStep<TOutput, TNextOutput>): Pipeline<TInput, TNextOutput> {
+										        if (this.steps.length === 0) {
+										            throw new Error("Must call start() before addStep()");
+										        }
+										        
+										        const previousStep = this.steps[this.steps.length - 1];
+										        if (previousStep) {
+										            previousStep.setNext(step);
+										        }
+										        this.steps.push(step);
+										        
+										        const newPipeline = new Pipeline<TInput, TNextOutput>();
+										        newPipeline.steps = this.steps;
+										        newPipeline.firstStep = this.firstStep as AbstractStep<TInput, unknown>;
+										        return newPipeline;
+										    }
+										
+										    public build(): AbstractStep<TInput, TOutput> {
+										        if (!this.firstStep) {
+										            throw new Error("No steps defined. Call start() first.");
+										        }
+										        
+										        return this.firstStep as AbstractStep<TInput, TOutput>;
+										    }
+										}]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+									<file path='src/robots/commons/index.ts'><![CDATA[
+										import puppeteer, { type LaunchOptions } from "puppeteer";
+										import { AbstractStep } from "../step";
+										import type { WithBrowser, WithPage, WithWorkingPage } from "./types";
+										
+										export class OpenBrowserStep extends AbstractStep<never, WithBrowser> {
+										    constructor(private options?: LaunchOptions) {
+										        super("OpenBrowserStep");
+										    }
+										
+										    protected async runStep(): Promise<WithBrowser> {
+										        const browser = await puppeteer.launch({
+										            headless: false,
+										            ...this.options,
+										        });
+										        return { browser } as WithBrowser;
+										    }
+										}
+										
+										export class CloseBrowserStep<TIn extends WithBrowser> extends AbstractStep<TIn, void> {
+										    constructor() {
+										        super("CloseBrowserStep");
+										    }
+										
+										    protected async runStep(data: TIn): Promise<void> {
+										        await data.browser.close();
+										    }
+										}
+										
+										export class FinishExecutionStep<T, TIn extends WithBrowser & { data: T } = WithBrowser & { data: T }> extends AbstractStep<TIn, T> {
+										    constructor() {
+										        super("FinishExecutionStep");
+										    }
+										
+										    protected async runStep(input: TIn): Promise<T> {
+										        await input.browser.close();
+										        return input.data;
+										    }
+										}
+										
+										export class OpenPageStep<TIn extends WithBrowser, Tout extends WithWorkingPage> extends AbstractStep<TIn, Tout> {
+										    constructor() {
+										        super("OpenPageStep");
+										    }
+										
+										    protected async runStep(data: TIn): Promise<Tout> {
+										        const page = await data.browser.newPage();
+										        return { browser: data.browser, page } as Tout;
+										    }
+										}
+										
+										export class NavigateToStep<T extends WithPage = WithPage> extends AbstractStep<T, T> {
+										    constructor(
+										        private url: string,
+										        private waitUntil:
+										            | "load"
+										            | "domcontentloaded"
+										            | "networkidle0"
+										            | "networkidle2" = "networkidle2"
+										    ) {
+										        super("NavigateToStep");
+										    }
+										
+										    protected async runStep(data: T): Promise<T> {
+										        await data.page.goto(this.url, { waitUntil: this.waitUntil });
+										        return data;
+										    }
+										}
+										
+										/**
+										 * Injects a context object into the input data.
+										 * @description if there is collision between the input data and the context, the context will override the input data.
+										 */
+										export class InjectContextStep<TInput, TContext> extends AbstractStep<TInput, TInput & TContext> {
+										    constructor(private context: TContext) {
+										        super("InjectContextStep");
+										    }
+										
+										    protected async runStep(data: TInput): Promise<TInput & TContext> {
+										        return Object.assign({}, data, this.context) as TInput & TContext;
+										    }
+										}]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+									<file path='src/robots/commons/types.ts'><![CDATA[
+										import type { Browser, Page } from "puppeteer";
+										
+										export interface WithBrowser {
+										    browser: Browser;
+										}
+										
+										export interface WithContext<TContext> {
+										    context: TContext;
+										}
+										
+										export interface WithPage {
+										    page: Page;
+										}
+										
+										export type WithWorkingPage = WithPage & WithBrowser;]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+									<file path='src/robots/scrape/steps.ts'><![CDATA[
+										import type { WithPage, WithBrowser, WithWorkingPage } from "../commons/types";
+										import { AbstractStep } from "../step";
+										
+										export interface Quote {
+										    text: string;
+										    author: string;
+										    tags: string[];
+										}
+										
+										
+										export class ExtractQuotesStep<T extends WithWorkingPage> extends AbstractStep<T, T & { data: Quote[] }> {
+										    constructor() {
+										        super("ExtractQuotesStep");
+										    }
+										
+										    protected async runStep(input: T): Promise<T & { data: Quote[] }> {
+										        // Wait for quotes to be available on the page
+										        await input.page.waitForSelector('.quote', { timeout: 10000 });
+										        
+										        // Use $$eval for more efficient data extraction
+										        const quotes = await input.page.$$eval('.quote', (quoteElements) => {
+										            const results: Array<{text: string, author: string, tags: string[]}> = [];
+										            
+										            quoteElements.forEach((quote) => {
+										                const textElement = quote.querySelector('.text');
+										                const authorElement = quote.querySelector('.author');
+										                const tagElements = quote.querySelectorAll('.tag');
+										                
+										                if (textElement && authorElement) {
+										                    results.push({
+										                        text: textElement.textContent?.trim() || '',
+										                        author: authorElement.textContent?.trim() || '',
+										                        tags: Array.from(tagElements).map((tag: any) => tag.textContent?.trim() || '')
+										                    });
+										                }
+										            });
+										            
+										            return results;
+										        });
+										        
+										        return {
+										            ...input,
+										            data: quotes
+										        };
+										    }
+										}]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+									<file path='src/robots/step.ts'><![CDATA[
+										export type Maybe<T> = { result: T; error: null } | { result: null; error: Error };
+										
+										export abstract class AbstractStep<TInput, TOutput = TInput> {
+										    name: string;
+										    private nextStep?: AbstractStep<TOutput, unknown>;
+										  
+										    constructor(name: string) {
+										      this.name = name;
+										    }
+										    
+										    // Método que cada passo concreto vai precisar implementar
+										    protected abstract runStep(data: TInput): Promise<TOutput>;
+										  
+										    public setNext(step: AbstractStep<TOutput, unknown>): AbstractStep<TOutput, unknown> {
+										      this.nextStep = step;
+										      return step;
+										    }
+										
+										    // Method overloads for better type inference
+										    public async run(): Promise<unknown>;
+										    public async run(data: TInput): Promise<unknown>;
+										    public async run(data?: TInput): Promise<unknown> {
+										      this.onStart();
+										
+										      const maybeResult = await this.safeRunStep(data as TInput);
+										
+										      this.onFinish();
+										
+										      if (maybeResult.error) {
+										        throw this.onError(maybeResult.error);
+										      }
+										
+										      this.onSuccess();
+										
+										      // If there's a next step, run it with the current result
+										      if (this.nextStep) {
+										        return await this.nextStep.run(maybeResult.result);
+										      }
+										
+										      return maybeResult.result;
+										    }
+										
+										    protected async safeRunStep(data: TInput): Promise<Maybe<TOutput>> {
+										        try {
+										            return { result: await this.runStep(data), error: null };
+										        } catch (error: unknown) {
+										          if (error instanceof Error) {
+										            return { result: null, error };
+										          }
+										
+										          return { result: null, error: new Error(String(error)) };
+										        }
+										    }
+										
+										    protected onStart(): void {
+										        console.log(`[${this.name}] Starting execution...`);
+										    }
+										
+										    protected onFinish(): void {
+										        console.log(`[${this.name}] Execution completed.`);
+										    }
+										
+										    protected onSuccess(): void {
+										        console.log(`[${this.name}] Execution completed successfully.`);
+										    }
+										
+										    protected onError(error: unknown): Error {
+										      console.error(`[${this.name}] ❌ Execution failed:`, error);
+										        
+										      // Enriquece o erro com informações do step
+										      const stepError = new Error(`Step '${this.name}' failed: ${error instanceof Error ? error.message : String(error)}`);
+										      stepError.cause = error;
+										      stepError.stack = `${stepError.stack}\n--- Caused by step '${this.name}' ---\n${error instanceof Error ? error.stack : 'No stack trace available'}`;
+										      
+										      return stepError;
+										    }
+										  }]]]]]]]]]]><![CDATA[><![CDATA[><![CDATA[><![CDATA[></file>
+									<file path='tsconfig.json'>
+										{
+										  // Visit https://aka.ms/tsconfig to read more about this file
+										  "compilerOptions": {
+										    // File Layout
+										    "rootDir": "./src",
+										    "outDir": "./dist",
+										
+										    // Environment Settings
+										    // See also https://aka.ms/tsconfig/module
+										    "module": "esnext",
+										    "target": "es2022",
+										    "moduleResolution": "bundler",
+										    "allowSyntheticDefaultImports": true,
+										    "types": ["node"],
+										    "lib": ["esnext"],
+										
+										    // Other Outputs
+										    "sourceMap": true,
+										    "declaration": true,
+										    "declarationMap": true,
+										
+										    // Stricter Typechecking Options
+										    "noUncheckedIndexedAccess": true,
+										    "exactOptionalPropertyTypes": true,
+										
+										    // Style Options
+										    // "noImplicitReturns": true,
+										    // "noImplicitOverride": true,
+										    // "noUnusedLocals": true,
+										    // "noUnusedParameters": true,
+										    // "noFallthroughCasesInSwitch": true,
+										    // "noPropertyAccessFromIndexSignature": true,
+										
+										    // Recommended Options
+										    "strict": true,
+										    "jsx": "react-jsx",
+										    "verbatimModuleSyntax": true,
+										    "isolatedModules": true,
+										    "noUncheckedSideEffectImports": true,
+										    "moduleDetection": "force",
+										    "skipLibCheck": true,
+										  }
+										}</file>
+								</files>]]]]]]]]><![CDATA[><![CDATA[><![CDATA[></file>
+							<file path='package.json'>
+								{
+								    "type": "module",
+								    "strict": true,
+								    "module": "nodenext",
+								    "moduleResolution": "nodenext",
+								    "devDependencies": {
+								        "@types/express": "^5.0.3",
+								        "@types/node": "^24.3.0",
+								        "typescript": "^5.9.2"
+								    },
+								    "dependencies": {
+								        "@stone-js/pipeline": "^0.1.3",
+								        "express": "^5.1.0",
+								        "puppeteer": "^24.17.0"
+								    }
+								}</file>
+							<file path='src/help.ts'/>
+							<file path='src/index.ts'><![CDATA[
+								import { Pipeline } from "./robots/builder";
+								import { OpenBrowserStep, OpenPageStep, NavigateToStep, FinishExecutionStep, InjectContextStep } from "./robots/commons";
+								import type { WithWorkingPage } from "./robots/commons/types";
+								import { ExtractQuotesStep, type Quote } from "./robots/scrape/steps";
+								
+								async function main() {
+								    const pipeline = new Pipeline()
+								            .start(new OpenBrowserStep())
+								            .addStep(new OpenPageStep())
+								            .addStep(new InjectContextStep<WithWorkingPage, { system: string }>({ system: "Quotes" }))
+								            .addStep(new NavigateToStep("https://quotes.toscrape.com/"))
+								            .addStep(new ExtractQuotesStep())
+								            .addGuard((output: { data: Quote[] }) => {
+								                console.log(`Guard: Found ${output.data.length} quotes`);
+								                // Only proceed if we found more than 5 quotes
+								                return output.data.length > 5;
+								            })
+								            .addStep(new FinishExecutionStep<Quote[]>())
+								            .build()
+								            
+								
+								    const result = await pipeline.run();
+								    console.log("Pipeline result:", result);
+								}
+								
+								main().catch(console.error);]]]]]]]]><![CDATA[><![CDATA[><![CDATA[></file>
+							<file path='src/robots/builder.ts'><![CDATA[
+								import { AbstractStep } from "./step";
+								
+								export class GuardStep<T> extends AbstractStep<T, T> {
+								    private originalNext?: AbstractStep<T, unknown>;
+								    
+								    constructor(private guardFn: (output: T) => boolean) {
+								        super("GuardStep");
+								    }
+								
+								    public setNext(step: AbstractStep<T, unknown>): AbstractStep<T, unknown> {
+								        this.originalNext = step;
+								        return super.setNext(step);
+								    }
+								
+								    protected async runStep(data: T): Promise<T> {
+								        const shouldProceed = this.guardFn(data);
+								        if (!shouldProceed) {
+								            // Clear the next step to stop the chain
+								            (this as any).nextStep = undefined;
+								        } else if (this.originalNext) {
+								            // Restore the next step if guard passes
+								            (this as any).nextStep = this.originalNext;
+								        }
+								        return data;
+								    }
+								}
+								
+								export class Pipeline<TInput = unknown, TOutput = unknown> {
+								    protected steps: AbstractStep<unknown, unknown>[] = [];
+								    protected firstStep?: AbstractStep<TInput, unknown>;
+								
+								    constructor() {}
+								
+								    public start<TStartInput, TStartOutput>(step: AbstractStep<TStartInput, TStartOutput>): Pipeline<TStartInput, TStartOutput> {
+								        const pipeline = new Pipeline<TStartInput, TStartOutput>();
+								        pipeline.steps = [step];
+								        pipeline.firstStep = step as AbstractStep<TStartInput, unknown>;
+								        return pipeline;
+								    }
+								
+								    public addGuard(guardFn: (output: TOutput) => boolean): PipelineWithGuard<TInput, TOutput> {
+								        if (this.steps.length === 0) {
+								            throw new Error("Must call start() before addGuard()");
+								        }
+								        
+								        const guardStep = new GuardStep<TOutput>(guardFn);
+								        const previousStep = this.steps[this.steps.length - 1];
+								        if (previousStep) {
+								            previousStep.setNext(guardStep);
+								        }
+								        this.steps.push(guardStep);
+								        
+								        return new PipelineWithGuard<TInput, TOutput>(this.steps, this.firstStep!);
+								    }
+								
+								    public addStep<TNextOutput>(step: AbstractStep<TOutput, TNextOutput>): Pipeline<TInput, TNextOutput> {
+								        if (this.steps.length === 0) {
+								            throw new Error("Must call start() before addStep()");
+								        }
+								        
+								        const previousStep = this.steps[this.steps.length - 1];
+								        if (previousStep) {
+								            previousStep.setNext(step);
+								        }
+								        this.steps.push(step);
+								        
+								        const newPipeline = new Pipeline<TInput, TNextOutput>();
+								        newPipeline.steps = this.steps;
+								        newPipeline.firstStep = this.firstStep as AbstractStep<TInput, unknown>;
+								        return newPipeline;
+								    }
+								
+								    public build(): AbstractStep<TInput, TOutput> {
+								        if (!this.firstStep) {
+								            throw new Error("No steps defined. Call start() first.");
+								        }
+								        
+								        return this.firstStep as AbstractStep<TInput, TOutput>;
+								    }
+								}]]]]]]]]><![CDATA[><![CDATA[><![CDATA[></file>
+							<file path='src/robots/commons/index.ts'><![CDATA[
+								import puppeteer, { type LaunchOptions } from "puppeteer";
+								import { AbstractStep } from "../step";
+								import type { WithBrowser, WithPage, WithWorkingPage } from "./types";
+								
+								export class OpenBrowserStep extends AbstractStep<never, WithBrowser> {
+								    constructor(private options?: LaunchOptions) {
+								        super("OpenBrowserStep");
+								    }
+								
+								    protected async runStep(): Promise<WithBrowser> {
+								        const browser = await puppeteer.launch({
+								            headless: false,
+								            ...this.options,
+								        });
+								        return { browser } as WithBrowser;
+								    }
+								}
+								
+								export class CloseBrowserStep<TIn extends WithBrowser> extends AbstractStep<TIn, void> {
+								    constructor() {
+								        super("CloseBrowserStep");
+								    }
+								
+								    protected async runStep(data: TIn): Promise<void> {
+								        await data.browser.close();
+								    }
+								}
+								
+								export class FinishExecutionStep<T, TIn extends WithBrowser & { data: T } = WithBrowser & { data: T }> extends AbstractStep<TIn, T> {
+								    constructor() {
+								        super("FinishExecutionStep");
+								    }
+								
+								    protected async runStep(input: TIn): Promise<T> {
+								        await input.browser.close();
+								        return input.data;
+								    }
+								}
+								
+								export class OpenPageStep<TIn extends WithBrowser, Tout extends WithWorkingPage> extends AbstractStep<TIn, Tout> {
+								    constructor() {
+								        super("OpenPageStep");
+								    }
+								
+								    protected async runStep(data: TIn): Promise<Tout> {
+								        const page = await data.browser.newPage();
+								        return { browser: data.browser, page } as Tout;
+								    }
+								}
+								
+								export class NavigateToStep<T extends WithPage = WithPage> extends AbstractStep<T, T> {
+								    constructor(
+								        private url: string,
+								        private waitUntil:
+								            | "load"
+								            | "domcontentloaded"
+								            | "networkidle0"
+								            | "networkidle2" = "networkidle2"
+								    ) {
+								        super("NavigateToStep");
+								    }
+								
+								    protected async runStep(data: T): Promise<T> {
+								        await data.page.goto(this.url, { waitUntil: this.waitUntil });
+								        return data;
+								    }
+								}
+								
+								/**
+								 * Injects a context object into the input data.
+								 * @description if there is collision between the input data and the context, the context will override the input data.
+								 */
+								export class InjectContextStep<TInput, TContext> extends AbstractStep<TInput, TInput & TContext> {
+								    constructor(private context: TContext) {
+								        super("InjectContextStep");
+								    }
+								
+								    protected async runStep(data: TInput): Promise<TInput & TContext> {
+								        return Object.assign({}, data, this.context) as TInput & TContext;
+								    }
+								}]]]]]]]]><![CDATA[><![CDATA[><![CDATA[></file>
+							<file path='src/robots/commons/types.ts'><![CDATA[
+								import type { Browser, Page } from "puppeteer";
+								
+								export interface WithBrowser {
+								    browser: Browser;
+								}
+								
+								export interface WithContext<TContext> {
+								    context: TContext;
+								}
+								
+								export interface WithPage {
+								    page: Page;
+								}
+								
+								export type WithWorkingPage = WithPage & WithBrowser;]]]]]]]]><![CDATA[><![CDATA[><![CDATA[></file>
+							<file path='src/robots/scrape/steps.ts'><![CDATA[
+								import type { WithPage, WithBrowser, WithWorkingPage } from "../commons/types";
+								import { AbstractStep } from "../step";
+								
+								export interface Quote {
+								    text: string;
+								    author: string;
+								    tags: string[];
+								}
+								
+								
+								export class ExtractQuotesStep<T extends WithWorkingPage> extends AbstractStep<T, T & { data: Quote[] }> {
+								    constructor() {
+								        super("ExtractQuotesStep");
+								    }
+								
+								    protected async runStep(input: T): Promise<T & { data: Quote[] }> {
+								        // Wait for quotes to be available on the page
+								        await input.page.waitForSelector('.quote', { timeout: 10000 });
+								        
+								        // Use $$eval for more efficient data extraction
+								        const quotes = await input.page.$$eval('.quote', (quoteElements) => {
+								            const results: Array<{text: string, author: string, tags: string[]}> = [];
+								            
+								            quoteElements.forEach((quote) => {
+								                const textElement = quote.querySelector('.text');
+								                const authorElement = quote.querySelector('.author');
+								                const tagElements = quote.querySelectorAll('.tag');
+								                
+								                if (textElement && authorElement) {
+								                    results.push({
+								                        text: textElement.textContent?.trim() || '',
+								                        author: authorElement.textContent?.trim() || '',
+								                        tags: Array.from(tagElements).map((tag: any) => tag.textContent?.trim() || '')
+								                    });
+								                }
+								            });
+								            
+								            return results;
+								        });
+								        
+								        return {
+								            ...input,
+								            data: quotes
+								        };
+								    }
+								}]]]]]]]]><![CDATA[><![CDATA[><![CDATA[></file>
+							<file path='src/robots/step.ts'><![CDATA[
+								export type Maybe<T> = { result: T; error: null } | { result: null; error: Error };
+								
+								export abstract class AbstractStep<TInput, TOutput = TInput> {
+								    name: string;
+								    private nextStep?: AbstractStep<TOutput, unknown>;
+								  
+								    constructor(name: string) {
+								      this.name = name;
+								    }
+								    
+								    // Método que cada passo concreto vai precisar implementar
+								    protected abstract runStep(data: TInput): Promise<TOutput>;
+								  
+								    public setNext(step: AbstractStep<TOutput, unknown>): AbstractStep<TOutput, unknown> {
+								      this.nextStep = step;
+								      return step;
+								    }
+								
+								    // Method overloads for better type inference
+								    public async run(): Promise<unknown>;
+								    public async run(data: TInput): Promise<unknown>;
+								    public async run(data?: TInput): Promise<unknown> {
+								      this.onStart();
+								
+								      const maybeResult = await this.safeRunStep(data as TInput);
+								
+								      this.onFinish();
+								
+								      if (maybeResult.error) {
+								        throw this.onError(maybeResult.error);
+								      }
+								
+								      this.onSuccess();
+								
+								      // If there's a next step, run it with the current result
+								      if (this.nextStep) {
+								        return await this.nextStep.run(maybeResult.result);
+								      }
+								
+								      return maybeResult.result;
+								    }
+								
+								    protected async safeRunStep(data: TInput): Promise<Maybe<TOutput>> {
+								        try {
+								            return { result: await this.runStep(data), error: null };
+								        } catch (error: unknown) {
+								          if (error instanceof Error) {
+								            return { result: null, error };
+								          }
+								
+								          return { result: null, error: new Error(String(error)) };
+								        }
+								    }
+								
+								    protected onStart(): void {
+								        console.log(`[${this.name}] Starting execution...`);
+								    }
+								
+								    protected onFinish(): void {
+								        console.log(`[${this.name}] Execution completed.`);
+								    }
+								
+								    protected onSuccess(): void {
+								        console.log(`[${this.name}] Execution completed successfully.`);
+								    }
+								
+								    protected onError(error: unknown): Error {
+								      console.error(`[${this.name}] ❌ Execution failed:`, error);
+								        
+								      // Enriquece o erro com informações do step
+								      const stepError = new Error(`Step '${this.name}' failed: ${error instanceof Error ? error.message : String(error)}`);
+								      stepError.cause = error;
+								      stepError.stack = `${stepError.stack}\n--- Caused by step '${this.name}' ---\n${error instanceof Error ? error.stack : 'No stack trace available'}`;
+								      
+								      return stepError;
+								    }
+								  }]]]]]]]]><![CDATA[><![CDATA[><![CDATA[></file>
+							<file path='tsconfig.json'>
+								{
+								  // Visit https://aka.ms/tsconfig to read more about this file
+								  "compilerOptions": {
+								    // File Layout
+								    "rootDir": "./src",
+								    "outDir": "./dist",
+								
+								    // Environment Settings
+								    // See also https://aka.ms/tsconfig/module
+								    "module": "esnext",
+								    "target": "es2022",
+								    "moduleResolution": "bundler",
+								    "allowSyntheticDefaultImports": true,
+								    "types": ["node"],
+								    "lib": ["esnext"],
+								
+								    // Other Outputs
+								    "sourceMap": true,
+								    "declaration": true,
+								    "declarationMap": true,
+								
+								    // Stricter Typechecking Options
+								    "noUncheckedIndexedAccess": true,
+								    "exactOptionalPropertyTypes": true,
+								
+								    // Style Options
+								    // "noImplicitReturns": true,
+								    // "noImplicitOverride": true,
+								    // "noUnusedLocals": true,
+								    // "noUnusedParameters": true,
+								    // "noFallthroughCasesInSwitch": true,
+								    // "noPropertyAccessFromIndexSignature": true,
+								
+								    // Recommended Options
+								    "strict": true,
+								    "jsx": "react-jsx",
+								    "verbatimModuleSyntax": true,
+								    "isolatedModules": true,
+								    "noUncheckedSideEffectImports": true,
+								    "moduleDetection": "force",
+								    "skipLibCheck": true,
+								  }
+								}</file>
+						</files>]]]]]]><![CDATA[><![CDATA[></file>
+					<file path='package.json'>
+						{
+						    "type": "module",
+						    "strict": true,
+						    "module": "nodenext",
+						    "moduleResolution": "nodenext",
+						    "devDependencies": {
+						        "@types/express": "^5.0.3",
+						        "@types/node": "^24.3.0",
+						        "typescript": "^5.9.2"
+						    },
+						    "dependencies": {
+						        "@stone-js/pipeline": "^0.1.3",
+						        "express": "^5.1.0",
+						        "puppeteer": "^24.17.0"
+						    }
+						}</file>
+					<file path='src/index.ts'><![CDATA[
+						import { Pipeline } from "./pipeline";
+						import { 
+						    OpenBrowserStep, 
+						    OpenPageStep, 
+						    NavigateToStep, 
+						    FinishExecutionStep, 
+						    InjectContextStep,
+						    ExtractQuotesStep,
+						    type WithWorkingPage,
+						    type Quote 
+						} from "./steps";
+						
+						async function main() {
+						    const pipeline = new Pipeline()
+						        .addStep(new OpenBrowserStep())
+						        .addStep(new OpenPageStep())
+						        .addStep(new InjectContextStep<WithWorkingPage, { system: string }>({ system: "Quotes" }))
+						        .addStep(new NavigateToStep("https://quotes.toscrape.com/"))
+						        .addStep(new ExtractQuotesStep())
+						        .addGuard((output: { data: Quote[] }) => {
+						            console.log(`Guard: Found ${output.data.length} quotes`);
+						            // Only proceed if we found more than 5 quotes
+						            return output.data.length > 5;
+						        })
+						        .addStep(new FinishExecutionStep<Quote[]>());
+						
+						    const result = await pipeline.run();
+						    console.log("Pipeline result:", result);
+						}
+						
+						main().catch(console.error);]]]]]]><![CDATA[><![CDATA[></file>
+					<file path='src/pipeline/index.ts'><![CDATA[
+						// Step contract
+						export abstract class Step<I, O> {
+						  name?: string;
+						  abstract run(input: I): Promise<O> | O;
+						}
+						
+						type Guard<T> = (input: T) => boolean | Promise<boolean>;
+						
+						interface StepEntry<I, O> {
+						  step: Step<I, O>;
+						  guard?: Guard<I>;
+						}
+						
+						export interface PipelineHooks {
+						  onStart?: (data?: unknown) => void | Promise<void>;
+						  onFinish?: (data?: unknown) => void | Promise<void>;
+						  onBeforeStep?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
+						  onAfterStepSuccess?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
+						  onFail?: (data: { stepName?: string; data?: unknown; error?: unknown }) => void | Promise<void>;
+						}
+						
+						export interface Logger {
+						  log: (...args: unknown[]) => void;
+						  error: (...args: unknown[]) => void;
+						}
+						
+						// Default logger using console
+						const defaultLogger: Logger = console;
+						
+						export class Pipeline<I, O = I> {
+						  private steps: StepEntry<any, any>[] = [];
+						  private hooks: PipelineHooks = {};
+						  private logger: Logger;
+						  private initialArgs?: I;
+						
+						  constructor(initialArgs?: I, logger: Logger = defaultLogger) {
+						    this.initialArgs = initialArgs;
+						    this.logger = logger;
+						  }
+						
+						  setHooks(hooks: PipelineHooks): this {
+						    this.hooks = hooks;
+						    return this;
+						  }
+						
+						  addStep<NextOut>(step: Step<O, NextOut>): Pipeline<I, NextOut> {
+						    this.steps.push({ step });
+						    return (this as unknown) as Pipeline<I, NextOut>;
+						  }
+						
+						  addGuard(guard: Guard<O>): this {
+						    if (this.steps.length === 0) {
+						      throw new Error("No step to attach guard to. Call addStep() before addGuard().");
+						    }
+						    const last = this.steps[this.steps.length - 1];
+						    last.guard = guard as Guard<any>;
+						    return this;
+						  }
+						
+						  async run(input?: I): Promise<O> {
+						    let data: any = input ?? this.initialArgs;
+						
+						    // onStart hook (default logs)
+						    if (this.hooks.onStart) {
+						      await this.hooks.onStart(data);
+						    } else {
+						      this.logger.log("[Pipeline] onStart:", data);
+						    }
+						
+						    for (const { step, guard } of this.steps) {
+						      try {
+						        // onBeforeStep (default logs)
+						        if (this.hooks.onBeforeStep) {
+						          await this.hooks.onBeforeStep({ stepName: step.name, data });
+						        } else {
+						          this.logger.log("[Pipeline] Before step:", step.name, data);
+						        }
+						
+						        // Guard short-circuit
+						        if (guard && !(await guard(data))) {
+						          this.logger.log("[Pipeline] Guard failed, short-circuiting step:", step.name);
+						          return data as O;
+						        }
+						
+						        data = await step.run(data);
+						
+						        // onAfterStepSuccess (default logs)
+						        if (this.hooks.onAfterStepSuccess) {
+						          await this.hooks.onAfterStepSuccess({ stepName: step.name, data });
+						        } else {
+						          this.logger.log("[Pipeline] After step success:", step.name, data);
+						        }
+						      } catch (error) {
+						        // onFail (default logs)
+						        if (this.hooks.onFail) {
+						          await this.hooks.onFail({ stepName: step.name, data, error });
+						        } else {
+						          this.logger.error("[Pipeline] Step failed:", step.name, error);
+						        }
+						        throw error; // propagate
+						      }
+						    }
+						
+						    if (this.hooks.onFinish) {
+						      await this.hooks.onFinish(data);
+						    } else {
+						      this.logger.log("[Pipeline] onFinish:", data);
+						    }
+						
+						    return data as O;
+						  }
+						}]]]]]]><![CDATA[><![CDATA[></file>
+					<file path='src/steps/browser.ts'><![CDATA[
+						import puppeteer, { type LaunchOptions } from "puppeteer";
+						import { Step } from "../pipeline";
+						import type { WithBrowser, WithWorkingPage } from "./types";
+						
+						export class OpenBrowserStep extends Step<never, WithBrowser> {
+						    name = "OpenBrowserStep";
+						
+						    constructor(private options?: LaunchOptions) {
+						        super();
+						    }
+						
+						    async run(): Promise<WithBrowser> {
+						        const browser = await puppeteer.launch({
+						            headless: false,
+						            ...this.options,
+						        });
+						        return { browser } as WithBrowser;
+						    }
+						}
+						
+						export class CloseBrowserStep<TIn extends WithBrowser> extends Step<TIn, void> {
+						    name = "CloseBrowserStep";
+						
+						    async run(data: TIn): Promise<void> {
+						        await data.browser.close();
+						    }
+						}
+						
+						export class FinishExecutionStep<T, TIn extends WithBrowser & { data: T } = WithBrowser & { data: T }> extends Step<TIn, T> {
+						    name = "FinishExecutionStep";
+						
+						    async run(input: TIn): Promise<T> {
+						        await input.browser.close();
+						        return input.data;
+						    }
+						}
+						
+						export class OpenPageStep<TIn extends WithBrowser, Tout extends WithWorkingPage> extends Step<TIn, Tout> {
+						    name = "OpenPageStep";
+						
+						    async run(data: TIn): Promise<Tout> {
+						        const page = await data.browser.newPage();
+						        return { browser: data.browser, page } as Tout;
+						    }
+						}
+						
+						export class NavigateToStep<T extends WithWorkingPage = WithWorkingPage> extends Step<T, T> {
+						    name = "NavigateToStep";
+						
+						    constructor(
+						        private url: string,
+						        private waitUntil:
+						            | "load"
+						            | "domcontentloaded"
+						            | "networkidle0"
+						            | "networkidle2" = "networkidle2"
+						    ) {
+						        super();
+						    }
+						
+						    async run(data: T): Promise<T> {
+						        await data.page.goto(this.url, { waitUntil: this.waitUntil });
+						        return data;
+						    }
+						}
+						
+						/**
+						 * Injects a context object into the input data.
+						 * @description if there is collision between the input data and the context, the context will override the input data.
+						 */
+						export class InjectContextStep<TInput, TContext> extends Step<TInput, TInput & TContext> {
+						    name = "InjectContextStep";
+						
+						    constructor(private context: TContext) {
+						        super();
+						    }
+						
+						    async run(data: TInput): Promise<TInput & TContext> {
+						        return Object.assign({}, data, this.context) as TInput & TContext;
+						    }
+						}]]]]]]><![CDATA[><![CDATA[></file>
+					<file path='src/steps/index.ts'>
+						export * from "./browser";
+						export * from "./scraping";
+						export * from "./types";</file>
+					<file path='src/steps/scraping.ts'><![CDATA[
+						import type { WithWorkingPage } from "./types";
+						import { Step } from "../pipeline";
+						
+						export interface Quote {
+						    text: string;
+						    author: string;
+						    tags: string[];
+						}
+						
+						export class ExtractQuotesStep<T extends WithWorkingPage> extends Step<T, T & { data: Quote[] }> {
+						    name = "ExtractQuotesStep";
+						
+						    async run(input: T): Promise<T & { data: Quote[] }> {
+						        // Wait for quotes to be available on the page
+						        await input.page.waitForSelector('.quote', { timeout: 10000 });
+						        
+						        // Use $$eval for more efficient data extraction
+						        const quotes = await input.page.$$eval('.quote', (quoteElements) => {
+						            const results: Array<{text: string, author: string, tags: string[]}> = [];
+						            
+						            quoteElements.forEach((quote) => {
+						                const textElement = quote.querySelector('.text');
+						                const authorElement = quote.querySelector('.author');
+						                const tagElements = quote.querySelectorAll('.tag');
+						                
+						                if (textElement && authorElement) {
+						                    results.push({
+						                        text: textElement.textContent?.trim() || '',
+						                        author: authorElement.textContent?.trim() || '',
+						                        tags: Array.from(tagElements).map((tag: any) => tag.textContent?.trim() || '')
+						                    });
+						                }
+						            });
+						            
+						            return results;
+						        });
+						        
+						        return {
+						            ...input,
+						            data: quotes
+						        };
+						    }
+						}]]]]]]><![CDATA[><![CDATA[></file>
+					<file path='src/steps/types.ts'><![CDATA[
+						import type { Browser, Page } from "puppeteer";
+						
+						export interface WithBrowser {
+						    browser: Browser;
+						}
+						
+						export interface WithContext<TContext> {
+						    context: TContext;
+						}
+						
+						export interface WithPage {
+						    page: Page;
+						}
+						
+						export type WithWorkingPage = WithPage & WithBrowser;]]]]]]><![CDATA[><![CDATA[></file>
+					<file path='tsconfig.json'>
+						{
+						  // Visit https://aka.ms/tsconfig to read more about this file
+						  "compilerOptions": {
+						    // File Layout
+						    "rootDir": "./src",
+						    "outDir": "./dist",
+						
+						    // Environment Settings
+						    // See also https://aka.ms/tsconfig/module
+						    "module": "esnext",
+						    "target": "es2022",
+						    "moduleResolution": "bundler",
+						    "allowSyntheticDefaultImports": true,
+						    "types": ["node"],
+						    "lib": ["esnext"],
+						
+						    // Other Outputs
+						    "sourceMap": true,
+						    "declaration": true,
+						    "declarationMap": true,
+						
+						    // Stricter Typechecking Options
+						    "noUncheckedIndexedAccess": true,
+						    "exactOptionalPropertyTypes": true,
+						
+						    // Style Options
+						    // "noImplicitReturns": true,
+						    // "noImplicitOverride": true,
+						    // "noUnusedLocals": true,
+						    // "noUnusedParameters": true,
+						    // "noFallthroughCasesInSwitch": true,
+						    // "noPropertyAccessFromIndexSignature": true,
+						
+						    // Recommended Options
+						    "strict": true,
+						    "jsx": "react-jsx",
+						    "verbatimModuleSyntax": true,
+						    "isolatedModules": true,
+						    "noUncheckedSideEffectImports": true,
+						    "moduleDetection": "force",
+						    "skipLibCheck": true,
+						  }
+						}</file>
+				</files>]]]]><![CDATA[></file>
+			<file path='package.json'>
+				{
+				    "type": "module",
+				    "strict": true,
+				    "module": "nodenext",
+				    "moduleResolution": "nodenext",
+				    "devDependencies": {
+				        "@types/express": "^5.0.3",
+				        "@types/node": "^24.3.0",
+				        "typescript": "^5.9.2"
+				    },
+				    "dependencies": {
+				        "@stone-js/pipeline": "^0.1.3",
+				        "express": "^5.1.0",
+				        "puppeteer": "^24.17.0"
+				    }
+				}</file>
+			<file path='src/index.ts'><![CDATA[
+				import { Pipeline } from "./pipeline";
+				import { 
+				    OpenBrowserStep, 
+				    OpenPageStep, 
+				    NavigateToStep, 
+				    FinishExecutionStep, 
+				    InjectContextStep,
+				    ExtractQuotesStep,
+				    type WithWorkingPage,
+				    type Quote 
+				} from "./steps";
+				
+				async function main() {
+				    const pipeline = new Pipeline()
+				        .addStep(new OpenBrowserStep())
+				        .addStep(new OpenPageStep())
+				        .addStep(new InjectContextStep<WithWorkingPage, { system: string }>({ system: "Quotes" }))
+				        .addStep(new NavigateToStep("https://quotes.toscrape.com/"))
+				        .addStep(new ExtractQuotesStep())
+				        .addGuard((output: { data: Quote[] }) => {
+				            console.log(`Guard: Found ${output.data.length} quotes`);
+				            // Only proceed if we found more than 5 quotes
+				            return output.data.length > 5;
+				        })
+				        .addStep(new FinishExecutionStep<Quote[]>());
+				
+				    const result = await pipeline.run();
+				    console.log("Pipeline result:", result);
+				}
+				
+				main().catch(console.error);]]]]><![CDATA[></file>
+			<file path='src/pipeline/index.ts'><![CDATA[
+				// Step contract
+				export abstract class Step<I, O> {
+				  name?: string;
+				  abstract run(input: I): Promise<O> | O;
+				}
+				
+				type Guard<T> = (input: T) => boolean | Promise<boolean>;
+				
+				interface StepEntry<I, O> {
+				  step: Step<I, O>;
+				  guard?: Guard<I>;
+				}
+				
+				export interface PipelineHooks {
+				  onStart?: (data?: unknown) => void | Promise<void>;
+				  onFinish?: (data?: unknown) => void | Promise<void>;
+				  onBeforeStep?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
+				  onAfterStepSuccess?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
+				  onFail?: (data: { stepName?: string; data?: unknown; error?: unknown }) => void | Promise<void>;
+				}
+				
+				export interface Logger {
+				  log: (...args: unknown[]) => void;
+				  error: (...args: unknown[]) => void;
+				}
+				
+				// Default logger using console
+				const defaultLogger: Logger = console;
+				
+				export class Pipeline<I, O = I> {
+				  private steps: StepEntry<any, any>[] = [];
+				  private hooks: PipelineHooks = {};
+				  private logger: Logger;
+				  private initialArgs?: I;
+				
+				  constructor(initialArgs?: I, logger: Logger = defaultLogger) {
+				    this.initialArgs = initialArgs;
+				    this.logger = logger;
+				  }
+				
+				  setHooks(hooks: PipelineHooks): this {
+				    this.hooks = hooks;
+				    return this;
+				  }
+				
+				  addStep<NextOut>(step: Step<O, NextOut>): Pipeline<I, NextOut> {
+				    this.steps.push({ step });
+				    return (this as unknown) as Pipeline<I, NextOut>;
+				  }
+				
+				  addGuard(guard: Guard<O>): this {
+				    if (this.steps.length === 0) {
+				      throw new Error("No step to attach guard to. Call addStep() before addGuard().");
+				    }
+				    const last = this.steps[this.steps.length - 1];
+				    last.guard = guard as Guard<any>;
+				    return this;
+				  }
+				
+				  async run(input?: I): Promise<O> {
+				    let data: any = input ?? this.initialArgs;
+				
+				    // onStart hook (default logs)
+				    if (this.hooks.onStart) {
+				      await this.hooks.onStart(data);
+				    } else {
+				      this.logger.log("[Pipeline] onStart:", data);
+				    }
+				
+				    for (const { step, guard } of this.steps) {
+				      try {
+				        // onBeforeStep (default logs)
+				        if (this.hooks.onBeforeStep) {
+				          await this.hooks.onBeforeStep({ stepName: step.name, data });
+				        } else {
+				          this.logger.log("[Pipeline] Before step:", step.name, data);
+				        }
+				
+				        // Guard short-circuit
+				        if (guard && !(await guard(data))) {
+				          this.logger.log("[Pipeline] Guard failed, short-circuiting step:", step.name);
+				          return data as O;
+				        }
+				
+				        data = await step.run(data);
+				
+				        // onAfterStepSuccess (default logs)
+				        if (this.hooks.onAfterStepSuccess) {
+				          await this.hooks.onAfterStepSuccess({ stepName: step.name, data });
+				        } else {
+				          this.logger.log("[Pipeline] After step success:", step.name, data);
+				        }
+				      } catch (error) {
+				        // onFail (default logs)
+				        if (this.hooks.onFail) {
+				          await this.hooks.onFail({ stepName: step.name, data, error });
+				        } else {
+				          this.logger.error("[Pipeline] Step failed:", step.name, error);
+				        }
+				        throw error; // propagate
+				      }
+				    }
+				
+				    if (this.hooks.onFinish) {
+				      await this.hooks.onFinish(data);
+				    } else {
+				      this.logger.log("[Pipeline] onFinish:", data);
+				    }
+				
+				    return data as O;
+				  }
+				}]]]]><![CDATA[></file>
+			<file path='src/steps/browser.ts'><![CDATA[
+				import puppeteer, { type LaunchOptions } from "puppeteer";
+				import { Step } from "../pipeline";
+				import type { WithBrowser, WithWorkingPage } from "./types";
+				
+				export class OpenBrowserStep extends Step<never, WithBrowser> {
+				    name = "OpenBrowserStep";
+				
+				    constructor(private options?: LaunchOptions) {
+				        super();
+				    }
+				
+				    async run(): Promise<WithBrowser> {
+				        const browser = await puppeteer.launch({
+				            headless: false,
+				            ...this.options,
+				        });
+				        return { browser } as WithBrowser;
+				    }
+				}
+				
+				export class CloseBrowserStep<TIn extends WithBrowser> extends Step<TIn, void> {
+				    name = "CloseBrowserStep";
+				
+				    async run(data: TIn): Promise<void> {
+				        await data.browser.close();
+				    }
+				}
+				
+				export class FinishExecutionStep<T, TIn extends WithBrowser & { data: T } = WithBrowser & { data: T }> extends Step<TIn, T> {
+				    name = "FinishExecutionStep";
+				
+				    async run(input: TIn): Promise<T> {
+				        await input.browser.close();
+				        return input.data;
+				    }
+				}
+				
+				export class OpenPageStep<TIn extends WithBrowser, Tout extends WithWorkingPage> extends Step<TIn, Tout> {
+				    name = "OpenPageStep";
+				
+				    async run(data: TIn): Promise<Tout> {
+				        const page = await data.browser.newPage();
+				        return { browser: data.browser, page } as Tout;
+				    }
+				}
+				
+				export class NavigateToStep<T extends WithWorkingPage = WithWorkingPage> extends Step<T, T> {
+				    name = "NavigateToStep";
+				
+				    constructor(
+				        private url: string,
+				        private waitUntil:
+				            | "load"
+				            | "domcontentloaded"
+				            | "networkidle0"
+				            | "networkidle2" = "networkidle2"
+				    ) {
+				        super();
+				    }
+				
+				    async run(data: T): Promise<T> {
+				        await data.page.goto(this.url, { waitUntil: this.waitUntil });
+				        return data;
+				    }
+				}
+				
+				/**
+				 * Injects a context object into the input data.
+				 * @description if there is collision between the input data and the context, the context will override the input data.
+				 */
+				export class InjectContextStep<TInput, TContext> extends Step<TInput, TInput & TContext> {
+				    name = "InjectContextStep";
+				
+				    constructor(private context: TContext) {
+				        super();
+				    }
+				
+				    async run(data: TInput): Promise<TInput & TContext> {
+				        return Object.assign({}, data, this.context) as TInput & TContext;
+				    }
+				}]]]]><![CDATA[></file>
+			<file path='src/steps/index.ts'>
+				export * from "./browser";
+				export * from "./scraping";
+				export * from "./types";</file>
+			<file path='src/steps/scraping.ts'><![CDATA[
+				import type { WithWorkingPage } from "./types";
+				import { Step } from "../pipeline";
+				
+				export interface Quote {
+				    text: string;
+				    author: string;
+				    tags: string[];
+				}
+				
+				export class ExtractQuotesStep<T extends WithWorkingPage> extends Step<T, T & { data: Quote[] }> {
+				    name = "ExtractQuotesStep";
+				
+				    async run(input: T): Promise<T & { data: Quote[] }> {
+				        // Wait for quotes to be available on the page
+				        await input.page.waitForSelector('.quote', { timeout: 10000 });
+				        
+				        // Use $$eval for more efficient data extraction
+				        const quotes = await input.page.$$eval('.quote', (quoteElements) => {
+				            const results: Array<{text: string, author: string, tags: string[]}> = [];
+				            
+				            quoteElements.forEach((quote) => {
+				                const textElement = quote.querySelector('.text');
+				                const authorElement = quote.querySelector('.author');
+				                const tagElements = quote.querySelectorAll('.tag');
+				                
+				                if (textElement && authorElement) {
+				                    results.push({
+				                        text: textElement.textContent?.trim() || '',
+				                        author: authorElement.textContent?.trim() || '',
+				                        tags: Array.from(tagElements).map((tag: any) => tag.textContent?.trim() || '')
+				                    });
+				                }
+				            });
+				            
+				            return results;
+				        });
+				        
+				        return {
+				            ...input,
+				            data: quotes
+				        };
+				    }
+				}]]]]><![CDATA[></file>
+			<file path='src/steps/types.ts'><![CDATA[
+				import type { Browser, Page } from "puppeteer";
+				
+				export interface WithBrowser {
+				    browser: Browser;
+				}
+				
+				export interface WithContext<TContext> {
+				    context: TContext;
+				}
+				
+				export interface WithPage {
+				    page: Page;
+				}
+				
+				export type WithWorkingPage = WithPage & WithBrowser;]]]]><![CDATA[></file>
+			<file path='tsconfig.json'>
+				{
+				  // Visit https://aka.ms/tsconfig to read more about this file
+				  "compilerOptions": {
+				    // File Layout
+				    "rootDir": "./src",
+				    "outDir": "./dist",
+				
+				    // Environment Settings
+				    // See also https://aka.ms/tsconfig/module
+				    "module": "esnext",
+				    "target": "es2022",
+				    "moduleResolution": "bundler",
+				    "allowSyntheticDefaultImports": true,
+				    "types": ["node"],
+				    "lib": ["esnext"],
+				
+				    // Other Outputs
+				    "sourceMap": true,
+				    "declaration": true,
+				    "declarationMap": true,
+				
+				    // Stricter Typechecking Options
+				    "noUncheckedIndexedAccess": true,
+				    "exactOptionalPropertyTypes": true,
+				
+				    // Style Options
+				    // "noImplicitReturns": true,
+				    // "noImplicitOverride": true,
+				    // "noUnusedLocals": true,
+				    // "noUnusedParameters": true,
+				    // "noFallthroughCasesInSwitch": true,
+				    // "noPropertyAccessFromIndexSignature": true,
+				
+				    // Recommended Options
+				    "strict": true,
+				    "jsx": "react-jsx",
+				    "verbatimModuleSyntax": true,
+				    "isolatedModules": true,
+				    "noUncheckedSideEffectImports": true,
+				    "moduleDetection": "force",
+				    "skipLibCheck": true,
+				  }
+				}</file>
+		</files>]]></file>
+	<file path='package.json'>
+		{
+		    "type": "module",
+		    "strict": true,
+		    "module": "nodenext",
+		    "moduleResolution": "nodenext",
+		    "devDependencies": {
+		        "@types/express": "^5.0.3",
+		        "@types/node": "^24.3.0",
+		        "typescript": "^5.9.2"
+		    },
+		    "dependencies": {
+		        "@stone-js/pipeline": "^0.1.3",
+		        "express": "^5.1.0",
+		        "puppeteer": "^24.17.0"
+		    }
+		}</file>
+	<file path='README.md'><![CDATA[
+		# 🔬 Pipeline Web Scraping Framework
+		
+		A TypeScript web scraping framework built with a flexible Pipeline architecture using Puppeteer for browser automation.
+		
+		## 🏗️ Architecture Overview
+		
+		```mermaid
+		graph TB
+		    subgraph "Pipeline Framework"
+		        A[Pipeline Class] --> B[Step Interface]
+		        A --> C[Guards]
+		        A --> D[Hooks System]
+		        A --> E[Logger Interface]
+		    end
+		    
+		    subgraph "Core Components"
+		        F[OpenBrowserStep] --> G[OpenPageStep]
+		        G --> H[NavigateToStep]
+		        H --> I[ExtractQuotesStep]
+		        I --> J[FinishExecutionStep]
+		    end
+		    
+		    subgraph "Data Flow"
+		        K[Input Data] --> L[Step Processing]
+		        L --> M{Guard Check}
+		        M -->|Pass| N[Next Step]
+		        M -->|Fail| O[Short Circuit]
+		        N --> P[Output Data]
+		    end
+		```
+		
+		## 🚀 Quick Start
+		
+		```typescript
+		import { Pipeline } from "./pipeline";
+		import { 
+		    OpenBrowserStep, 
+		    OpenPageStep, 
+		    NavigateToStep, 
+		    ExtractQuotesStep,
+		    FinishExecutionStep 
+		} from "./steps";
+		
+		async function main() {
+		    const pipeline = new Pipeline()
+		        .addStep(new OpenBrowserStep())
+		        .addStep(new OpenPageStep())
+		        .addStep(new NavigateToStep("https://quotes.toscrape.com/"))
+		        .addStep(new ExtractQuotesStep())
+		        .addGuard((output) => output.data.length > 5)
+		        .addStep(new FinishExecutionStep());
+		
+		    const result = await pipeline.run();
+		    console.log("Scraped quotes:", result);
+		}
+		```
+		
+		## 📊 Pipeline Execution Flow
+		
+		```mermaid
+		sequenceDiagram
+		    participant P as Pipeline
+		    participant S1 as OpenBrowserStep
+		    participant S2 as OpenPageStep
+		    participant S3 as NavigateToStep
+		    participant S4 as ExtractQuotesStep
+		    participant G as Guard
+		    participant S5 as FinishExecutionStep
+		
+		    P->>P: onStart Hook
+		    P->>S1: run()
+		    S1-->>P: { browser }
+		    
+		    P->>P: onBeforeStep Hook
+		    P->>S2: run({ browser })
+		    S2-->>P: { browser, page }
+		    
+		    P->>P: onBeforeStep Hook
+		    P->>S3: run({ browser, page })
+		    S3-->>P: { browser, page }
+		    
+		    P->>P: onBeforeStep Hook
+		    P->>S4: run({ browser, page })
+		    S4-->>P: { browser, page, data: Quote[] }
+		    
+		    P->>G: guard(data)
+		    G-->>P: boolean
+		    
+		    alt Guard passes
+		        P->>P: onBeforeStep Hook
+		        P->>S5: run({ browser, page, data })
+		        S5-->>P: Quote[]
+		    else Guard fails
+		        P->>P: Short circuit
+		    end
+		    
+		    P->>P: onFinish Hook
+		```
+		
+		## 🔧 Core Components
+		
+		### Pipeline Class
+		
+		The main orchestrator that manages step execution, guards, and hooks.
+		
+		```typescript
+		export class Pipeline<I, O = I> {
+		  addStep<NextOut>(step: Step<O, NextOut>): Pipeline<I, NextOut>
+		  addGuard(guard: Guard<O>): this
+		  setHooks(hooks: PipelineHooks): this
+		  run(input?: I): Promise<O>
+		}
+		```
+		
+		### Step Interface
+		
+		Abstract base class for all pipeline steps.
+		
+		```typescript
+		export abstract class Step<I, O> {
+		  name?: string;
+		  abstract run(input: I): Promise<O> | O;
+		}
+		```
+		
+		### Available Steps
+		
+		```mermaid
+		classDiagram
+		    class Step {
+		        <<abstract>>
+		        +name: string
+		        +run(input) Promise~O~
+		    }
+		    
+		    class OpenBrowserStep {
+		        +run() Promise~WithBrowser~
+		    }
+		    
+		    class OpenPageStep {
+		        +run(WithBrowser) Promise~WithWorkingPage~
+		    }
+		    
+		    class NavigateToStep {
+		        +url: string
+		        +run(WithPage) Promise~WithPage~
+		    }
+		    
+		    class ExtractQuotesStep {
+		        +run(WithWorkingPage) Promise~WithData~
+		    }
+		    
+		    class FinishExecutionStep {
+		        +run(WithBrowser & WithData) Promise~T~
+		    }
+		    
+		    Step <|-- OpenBrowserStep
+		    Step <|-- OpenPageStep
+		    Step <|-- NavigateToStep
+		    Step <|-- ExtractQuotesStep
+		    Step <|-- FinishExecutionStep
+		```
+		
+		## 🎣 Hooks System
+		
+		The Pipeline supports lifecycle hooks for monitoring and custom behavior:
+		
+		```typescript
+		interface PipelineHooks {
+		  onStart?: (data?: unknown) => void | Promise<void>;
+		  onFinish?: (data?: unknown) => void | Promise<void>;
+		  onBeforeStep?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
+		  onAfterStepSuccess?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
+		  onFail?: (data: { stepName?: string; data?: unknown; error?: unknown }) => void | Promise<void>;
+		}
+		```
+		
+		### Example with Custom Hooks
+		
+		```typescript
+		const pipeline = new Pipeline()
+		    .setHooks({
+		        onStart: (data) => console.log('🚀 Pipeline started'),
+		        onBeforeStep: ({ stepName }) => console.log(`⚡ Executing: ${stepName}`),
+		        onFail: ({ stepName, error }) => console.error(`❌ ${stepName} failed:`, error)
+		    })
+		    .addStep(new OpenBrowserStep())
+		    // ... more steps
+		```
+		
+		## 🛡️ Guards
+		
+		Guards provide conditional execution control:
+		
+		```mermaid
+		flowchart TD
+		    A[Step Execution] --> B{Guard Function}
+		    B -->|true| C[Continue Pipeline]
+		    B -->|false| D[Short Circuit]
+		    C --> E[Next Step]
+		    D --> F[Return Current Data]
+		```
+		
+		```typescript
+		// Only proceed if we found quotes
+		.addGuard((output: { data: Quote[] }) => {
+		    console.log(`Found ${output.data.length} quotes`);
+		    return output.data.length > 0;
+		})
+		```
+		
+		## 📝 Data Types
+		
+		```typescript
+		interface Quote {
+		    text: string;
+		    author: string;
+		    tags: string[];
+		}
+		
+		interface WithBrowser {
+		    browser: Browser;
+		}
+		
+		interface WithPage {
+		    page: Page;
+		}
+		
+		type WithWorkingPage = WithPage & WithBrowser;
+		```
+		
+		## 🗂️ Project Structure
+		
+		```
+		src/
+		├── pipeline/
+		│   └── index.ts          # Pipeline and Step base classes
+		├── steps/
+		│   ├── browser.ts        # Browser management steps
+		│   ├── scraping.ts       # Web scraping steps
+		│   ├── types.ts          # Type definitions
+		│   └── index.ts          # Exports
+		└── index.ts              # Main entry point
+		```
+		
+		## 🔍 Error Handling
+		
+		The Pipeline automatically catches and propagates errors through the `onFail` hook:
+		
+		```mermaid
+		graph LR
+		    A[Step Error] --> B[onFail Hook]
+		    B --> C[Error Propagation]
+		    C --> D[Pipeline Termination]
+		```
+		
+		## 📦 Dependencies
+		
+		- **puppeteer**: Browser automation
+		- **typescript**: Type safety
+		- **@types/node**: Node.js types
+		
+		## 🚀 Running the Project
+		
+		```bash
+		# Install dependencies
+		npm install
+		
+		# Run the scraper
+		npm start
+		```
+		
+		## 🎯 Features
+		
+		- ✅ **Type-safe Pipeline**: Full TypeScript support with generic types
+		- ✅ **Flexible Architecture**: Easy to add new steps and modify behavior
+		- ✅ **Guard System**: Conditional execution with short-circuiting
+		- ✅ **Lifecycle Hooks**: Monitor and customize pipeline execution
+		- ✅ **Error Handling**: Comprehensive error catching and reporting
+		- ✅ **Browser Automation**: Puppeteer integration for web scraping
+		- ✅ **Modular Design**: Clean separation of concerns
+		
+		## 🔮 Future Enhancements
+		
+		- [ ] Parallel step execution
+		- [ ] Step retry mechanisms
+		- [ ] Pipeline composition and nesting
+		- [ ] Built-in caching layer
+		- [ ] Metrics and performance monitoring]]></file>
+	<file path='src/index.ts'><![CDATA[
+		import { Pipeline } from "./pipeline";
+		import { 
+		    OpenBrowserStep, 
+		    OpenPageStep, 
+		    NavigateToStep, 
+		    FinishExecutionStep, 
+		    InjectContextStep,
+		    ExtractQuotesStep,
+		    type WithWorkingPage,
+		    type Quote 
+		} from "./steps";
+		
+		async function main() {
+		    const pipeline = new Pipeline()
+		        .addStep(new OpenBrowserStep())
+		        .addStep(new OpenPageStep())
+		        .addStep(new InjectContextStep<WithWorkingPage, { system: string }>({ system: "Quotes" }))
+		        .addStep(new NavigateToStep("https://quotes.toscrape.com/"))
+		        .addStep(new ExtractQuotesStep())
+		        .addGuard((output: { data: Quote[] }) => {
+		            console.log(`Guard: Found ${output.data.length} quotes`);
+		            // Only proceed if we found more than 5 quotes
+		            return output.data.length > 5;
+		        })
+		        .addStep(new FinishExecutionStep<Quote[]>());
+		
+		    const result = await pipeline.run();
+		    console.log("Pipeline result:", result);
+		}
+		
+		main().catch(console.error);]]></file>
+	<file path='src/pipeline/index.ts'><![CDATA[
+		// Step contract
+		export abstract class Step<I, O> {
+		  name?: string;
+		  abstract run(input: I): Promise<O> | O;
+		}
+		
+		type Guard<T> = (input: T) => boolean | Promise<boolean>;
+		
+		interface StepEntry<I, O> {
+		  step: Step<I, O>;
+		  guard?: Guard<I>;
+		}
+		
+		export interface PipelineHooks {
+		  onStart?: (data?: unknown) => void | Promise<void>;
+		  onFinish?: (data?: unknown) => void | Promise<void>;
+		  onBeforeStep?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
+		  onAfterStepSuccess?: (data: { stepName?: string; data?: unknown }) => void | Promise<void>;
+		  onFail?: (data: { stepName?: string; data?: unknown; error?: unknown }) => void | Promise<void>;
+		}
+		
+		export interface Logger {
+		  log: (...args: unknown[]) => void;
+		  error: (...args: unknown[]) => void;
+		}
+		
+		// Default logger using console
+		const defaultLogger: Logger = console;
+		
+		export class Pipeline<I, O = I> {
+		  private steps: StepEntry<any, any>[] = [];
+		  private hooks: PipelineHooks = {};
+		  private logger: Logger;
+		  private initialArgs?: I;
+		
+		  constructor(initialArgs?: I, logger: Logger = defaultLogger) {
+		    this.initialArgs = initialArgs;
+		    this.logger = logger;
+		  }
+		
+		  setHooks(hooks: PipelineHooks): this {
+		    this.hooks = hooks;
+		    return this;
+		  }
+		
+		  addStep<NextOut>(step: Step<O, NextOut>): Pipeline<I, NextOut> {
+		    this.steps.push({ step });
+		    return (this as unknown) as Pipeline<I, NextOut>;
+		  }
+		
+		  addGuard(guard: Guard<O>): this {
+		    if (this.steps.length === 0) {
+		      throw new Error("No step to attach guard to. Call addStep() before addGuard().");
+		    }
+		    const last = this.steps[this.steps.length - 1];
+		    last.guard = guard as Guard<any>;
+		    return this;
+		  }
+		
+		  async run(input?: I): Promise<O> {
+		    let data: any = input ?? this.initialArgs;
+		
+		    // onStart hook (default logs)
+		    if (this.hooks.onStart) {
+		      await this.hooks.onStart(data);
+		    } else {
+		      this.logger.log("[Pipeline] onStart:", data);
+		    }
+		
+		    for (const { step, guard } of this.steps) {
+		      try {
+		        // onBeforeStep (default logs)
+		        if (this.hooks.onBeforeStep) {
+		          await this.hooks.onBeforeStep({ stepName: step.name, data });
+		        } else {
+		          this.logger.log("[Pipeline] Before step:", step.name, data);
+		        }
+		
+		        // Guard short-circuit
+		        if (guard && !(await guard(data))) {
+		          this.logger.log("[Pipeline] Guard failed, short-circuiting step:", step.name);
+		          return data as O;
+		        }
+		
+		        data = await step.run(data);
+		
+		        // onAfterStepSuccess (default logs)
+		        if (this.hooks.onAfterStepSuccess) {
+		          await this.hooks.onAfterStepSuccess({ stepName: step.name, data });
+		        } else {
+		          this.logger.log("[Pipeline] After step success:", step.name, data);
+		        }
+		      } catch (error) {
+		        // onFail (default logs)
+		        if (this.hooks.onFail) {
+		          await this.hooks.onFail({ stepName: step.name, data, error });
+		        } else {
+		          this.logger.error("[Pipeline] Step failed:", step.name, error);
+		        }
+		        throw error; // propagate
+		      }
+		    }
+		
+		    if (this.hooks.onFinish) {
+		      await this.hooks.onFinish(data);
+		    } else {
+		      this.logger.log("[Pipeline] onFinish:", data);
+		    }
+		
+		    return data as O;
+		  }
+		}]]></file>
+	<file path='src/steps/browser.ts'><![CDATA[
+		import puppeteer, { type LaunchOptions } from "puppeteer";
+		import { Step } from "../pipeline";
+		import type { WithBrowser, WithWorkingPage } from "./types";
+		
+		export class OpenBrowserStep extends Step<never, WithBrowser> {
+		    name = "OpenBrowserStep";
+		
+		    constructor(private options?: LaunchOptions) {
+		        super();
+		    }
+		
+		    async run(): Promise<WithBrowser> {
+		        const browser = await puppeteer.launch({
+		            headless: false,
+		            ...this.options,
+		        });
+		        return { browser } as WithBrowser;
+		    }
+		}
+		
+		export class CloseBrowserStep<TIn extends WithBrowser> extends Step<TIn, void> {
+		    name = "CloseBrowserStep";
+		
+		    async run(data: TIn): Promise<void> {
+		        await data.browser.close();
+		    }
+		}
+		
+		export class FinishExecutionStep<T, TIn extends WithBrowser & { data: T } = WithBrowser & { data: T }> extends Step<TIn, T> {
+		    name = "FinishExecutionStep";
+		
+		    async run(input: TIn): Promise<T> {
+		        await input.browser.close();
+		        return input.data;
+		    }
+		}
+		
+		export class OpenPageStep<TIn extends WithBrowser, Tout extends WithWorkingPage> extends Step<TIn, Tout> {
+		    name = "OpenPageStep";
+		
+		    async run(data: TIn): Promise<Tout> {
+		        const page = await data.browser.newPage();
+		        return { browser: data.browser, page } as Tout;
+		    }
+		}
+		
+		export class NavigateToStep<T extends WithWorkingPage = WithWorkingPage> extends Step<T, T> {
+		    name = "NavigateToStep";
+		
+		    constructor(
+		        private url: string,
+		        private waitUntil:
+		            | "load"
+		            | "domcontentloaded"
+		            | "networkidle0"
+		            | "networkidle2" = "networkidle2"
+		    ) {
+		        super();
+		    }
+		
+		    async run(data: T): Promise<T> {
+		        await data.page.goto(this.url, { waitUntil: this.waitUntil });
+		        return data;
+		    }
+		}
+		
+		/**
+		 * Injects a context object into the input data.
+		 * @description if there is collision between the input data and the context, the context will override the input data.
+		 */
+		export class InjectContextStep<TInput, TContext> extends Step<TInput, TInput & TContext> {
+		    name = "InjectContextStep";
+		
+		    constructor(private context: TContext) {
+		        super();
+		    }
+		
+		    async run(data: TInput): Promise<TInput & TContext> {
+		        return Object.assign({}, data, this.context) as TInput & TContext;
+		    }
+		}]]></file>
+	<file path='src/steps/index.ts'>
+		export * from "./browser";
+		export * from "./scraping";
+		export * from "./types";</file>
+	<file path='src/steps/scraping.ts'><![CDATA[
+		import type { WithWorkingPage } from "./types";
+		import { Step } from "../pipeline";
+		
+		export interface Quote {
+		    text: string;
+		    author: string;
+		    tags: string[];
+		}
+		
+		export class ExtractQuotesStep<T extends WithWorkingPage> extends Step<T, T & { data: Quote[] }> {
+		    name = "ExtractQuotesStep";
+		
+		    async run(input: T): Promise<T & { data: Quote[] }> {
+		        // Wait for quotes to be available on the page
+		        await input.page.waitForSelector('.quote', { timeout: 10000 });
+		        
+		        // Use $$eval for more efficient data extraction
+		        const quotes = await input.page.$$eval('.quote', (quoteElements) => {
+		            const results: Array<{text: string, author: string, tags: string[]}> = [];
+		            
+		            quoteElements.forEach((quote) => {
+		                const textElement = quote.querySelector('.text');
+		                const authorElement = quote.querySelector('.author');
+		                const tagElements = quote.querySelectorAll('.tag');
+		                
+		                if (textElement && authorElement) {
+		                    results.push({
+		                        text: textElement.textContent?.trim() || '',
+		                        author: authorElement.textContent?.trim() || '',
+		                        tags: Array.from(tagElements).map((tag: any) => tag.textContent?.trim() || '')
+		                    });
+		                }
+		            });
+		            
+		            return results;
+		        });
+		        
+		        return {
+		            ...input,
+		            data: quotes
+		        };
+		    }
+		}]]></file>
+	<file path='src/steps/types.ts'><![CDATA[
+		import type { Browser, Page } from "puppeteer";
+		
+		export interface WithBrowser {
+		    browser: Browser;
+		}
+		
+		export interface WithContext<TContext> {
+		    context: TContext;
+		}
+		
+		export interface WithPage {
+		    page: Page;
+		}
+		
+		export type WithWorkingPage = WithPage & WithBrowser;]]></file>
+	<file path='tsconfig.json'>
+		{
+		  // Visit https://aka.ms/tsconfig to read more about this file
+		  "compilerOptions": {
+		    // File Layout
+		    "rootDir": "./src",
+		    "outDir": "./dist",
+		
+		    // Environment Settings
+		    // See also https://aka.ms/tsconfig/module
+		    "module": "esnext",
+		    "target": "es2022",
+		    "moduleResolution": "bundler",
+		    "allowSyntheticDefaultImports": true,
+		    "types": ["node"],
+		    "lib": ["esnext"],
+		
+		    // Other Outputs
+		    "sourceMap": true,
+		    "declaration": true,
+		    "declarationMap": true,
+		
+		    // Stricter Typechecking Options
+		    "noUncheckedIndexedAccess": true,
+		    "exactOptionalPropertyTypes": true,
+		
+		    // Style Options
+		    // "noImplicitReturns": true,
+		    // "noImplicitOverride": true,
+		    // "noUnusedLocals": true,
+		    // "noUnusedParameters": true,
+		    // "noFallthroughCasesInSwitch": true,
+		    // "noPropertyAccessFromIndexSignature": true,
+		
+		    // Recommended Options
+		    "strict": true,
+		    "jsx": "react-jsx",
+		    "verbatimModuleSyntax": true,
+		    "isolatedModules": true,
+		    "noUncheckedSideEffectImports": true,
+		    "moduleDetection": "force",
+		    "skipLibCheck": true,
+		  }
+		}</file>
+</files>

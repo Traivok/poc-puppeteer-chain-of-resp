@@ -1,0 +1,14 @@
+{
+    "name": "pipeline-web-scraping-poc",
+    "type": "module",
+    "strict": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "devDependencies": {
+        "@types/node": "^24.3.0",
+        "typescript": "^5.9.2"
+    },
+    "dependencies": {
+        "puppeteer": "^24.17.0"
+    }
+}
